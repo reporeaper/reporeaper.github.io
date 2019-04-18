@@ -288,6 +288,99 @@
 		max-width: 100%;
 	}
 
+	.about h1 {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 24px;
+		color: #626262;
+	}
+
+	.about p {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+		color: #626262;
+	}
+
+	.sidebar_social-icons {
+		display: flex;
+		justify-content: flex-start;
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	.sidebar_social-icons img {
+		padding: 0 7.5px;
+	}
+
+	.first-item img {
+		padding-left: 0;
+	}
+
+	.top-post h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+		margin: 50px auto 30px auto;
+	}
+
+	.posts ul li {
+		color: #626262;
+	}
+
+	.posts ul li a {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.6;
+		text-decoration: none;
+		color: #626262;
+	}
+
+	.posts ul li a:hover {
+		text-decoration: none;
+		color: #bbb7db;
+	}
+
+	.posts ul li p {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+	}
+
+	.banner {
+		margin-top: 40px;
+	}
+
+	.share-block h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+	}
+
+	.flex-container-min-1 {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.social-icons1 {
+		list-style-type: none;
+		display: flex;
+		align-items: flex-end;
+		padding-left: 20px;
+	}
+
+	.social-icons1 li a {
+		margin: 0 10px;
+	}
+
 /* ---------- /Первый блок: вторая страница ---------- */
 
 /* ---------- Второй блок: сетка, форма подписки ---------- */
