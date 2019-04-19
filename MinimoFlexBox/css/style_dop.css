@@ -87,7 +87,8 @@
 	.flex-container-big,
 	.flex-container-main-content,
 	.flex-container-sidebar,
-	.share-block {
+	.share-block,
+	.comments-block {
 		border: 2px solid black;
 	}
 	
@@ -248,13 +249,13 @@
 		max-width: 660px;
 		box-sizing: border-box;
 		margin-left: 150px;
+		margin-bottom: 100px;
 	}
 
 	.content-min-right {
 		max-width: 270px; /* 320px */
 		box-sizing: border-box;
 		margin-right: 70px;
-		/*margin-left: 50px;*/
 	}
 
 	.main_post-1 p {
@@ -379,6 +380,116 @@
 
 	.social-icons1 li a {
 		margin: 0 10px;
+	}
+
+	.block-post {
+		background-color: #f0f0f0;
+	}
+
+	.more_posts h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+		margin-left: 150px;
+	}
+
+	.more_posts-flex {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
+
+	.more_posts-flex article {
+		margin: 20px;
+	}
+
+	.more_posts-flex article:first-child {
+		margin-left: 150px;
+	}
+
+	.more_posts-flex article:last-child {
+		margin-right: 150px;
+	}
+
+	.more_posts-flex img {
+		max-width: 100%;
+	}
+
+	.more_posts-flex h1 {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 20px;
+		color: #626262;
+	}
+
+	.comments {
+		max-width: 900px;
+	}
+
+	.comments h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+	}
+
+	.comments-block {
+		display: flex;
+		align-items: center;
+	}
+
+	.comments-block p {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+		color: #626262;
+	}
+
+	.comments-block h3 {
+		margin-top: 30px;
+	}
+
+	textarea {
+		/*width: 750px;
+		height: 70px;*/
+		resize: none;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #000000;
+		border-radius: 5px;
+	}
+
+	textarea::-webkit-input-placeholder {
+		color: #c8c8c8;
+		padding-left: 30px;
+		padding-top: 15px;
+	}
+
+	textarea::-moz-placeholder {
+		color: #c8c8c8;
+	}
+
+	textarea:-ms-input-placeholder {
+
+	}
+
+	textarea:-moz-placeholder {
+
+	}
+
+	.discuss p span {
+		font-weight: bold;
+	}
+
+	.avatar {
+		border: 1px solid orangered;
+		margin-right: 40px;
 	}
 
 /* ---------- /Первый блок: вторая страница ---------- */
