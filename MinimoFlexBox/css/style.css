@@ -111,6 +111,10 @@
 		color: #000;
 	}
 
+	nav {
+		margin-right: 70px;
+	}
+
 	.main_menu li  {
 		font-family: "Playfair Display", serif;
 		font-size: 14px;
@@ -118,6 +122,10 @@
 		list-style-type: none;
 		color: #626262;
 		margin: 0 70px 0 70px;
+	}
+
+	.main_menu li:last-child {
+		margin-right: 0;
 	}
 	
 	.main_menu li a {
@@ -153,6 +161,7 @@
 	.main_menu {
 		display: flex;
 		flex-wrap: wrap;
+		padding-left: 0;
 	}
 
 /* ---------- /Шапка, навигация flex ---------- */
@@ -377,266 +386,265 @@
 
 /* ---------- Первый блок: вторая страница ---------- */
 
-.flex-container-big {
-	display: flex;
-}
+	.flex-container-big {
+		display: flex;
+	}
 
-.content-min-left {
-	max-width: 660px;
-	box-sizing: border-box;
-	margin-left: 150px;
-	margin-bottom: 100px;
-}
+	.content-min-left {
+		max-width: 660px;
+		box-sizing: border-box;
+		margin-left: 150px;
+		margin-bottom: 100px;
+	}
 
-.content-min-right {
-	max-width: 270px; /* 320px */
-	box-sizing: border-box;
-	margin-right: 70px;
-}
+	.content-min-right {
+		max-width: 270px; /* 320px */
+		box-sizing: border-box;
+		margin-right: 70px;
+	}
 
-.main_post-1 p {
-	padding-bottom: 60px;
-}
+	.main_post-1 p {
+		padding-bottom: 60px;
+	}
 
-.main_post-1 p span {
-	font-weight: bold;
-}
+	.main_post-1 p span {
+		font-weight: bold;
+	}
 
-.main_post-1 img {
-	max-width: 100%;
-	margin-bottom: 50px;
-}
+	.main_post-1 img {
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
 
-.quote {
-	font-family: "Playfair Display", serif;
-	font-weight: 400;
-	font-size: 14px;
-	font-style: italic;
-	line-height: 1.6;
-	color: #626262;
-}
+	.quote {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 14px;
+		font-style: italic;
+		line-height: 1.6;
+		color: #626262;
+	}
 
-.quote blockquote {
-	margin: 14px 20px;
-}
+	.quote blockquote {
+		margin: 14px 20px;
+	}
 
-.about img,
-.banner img {
-	max-width: 100%;
-}
+	.about img,
+	.banner img {
+		max-width: 100%;
+	}
 
-.about h1 {
-	font-family: "Playfair Display", serif;
-	font-weight: 400;
-	font-size: 24px;
-	color: #626262;
-}
+	.about h1 {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 24px;
+		color: #626262;
+	}
 
-.about p {
-	font-family: "Playfair Display", serif;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.6;
-	color: #626262;
-}
+	.about p {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+		color: #626262;
+	}
 
-.sidebar_social-icons {
-	display: flex;
-	justify-content: flex-start;
-	list-style-type: none;
-	padding-left: 0;
-}
+	.sidebar_social-icons {
+		display: flex;
+		justify-content: flex-start;
+		list-style-type: none;
+		padding-left: 0;
+	}
 
-.sidebar_social-icons img {
-	padding: 0 7.5px;
-}
+	.sidebar_social-icons img {
+		padding: 0 7.5px;
+	}
 
-.first-item img {
-	padding-left: 0;
-}
+	.first-item img {
+		padding-left: 0;
+	}
 
-.top-post h3 {
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #b4ad9e;
-	margin: 50px auto 30px auto;
-}
+	.top-post h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+		margin: 50px auto 30px auto;
+	}
 
-.posts ul li {
-	color: #626262;
-}
+	.posts ul li {
+		color: #626262;
+	}
 
-.posts ul li a {
-	font-family: "Playfair Display", serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.6;
-	text-decoration: none;
-	color: #626262;
-}
+	.posts ul li a {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.6;
+		text-decoration: none;
+		color: #626262;
+	}
 
-.posts ul li a:hover {
-	text-decoration: none;
-	color: #bbb7db;
-}
+	.posts ul li a:hover {
+		text-decoration: none;
+		color: #bbb7db;
+	}
 
-.posts ul li p {
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #b4ad9e;
-}
+	.posts ul li p {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+	}
 
-.banner {
-	margin-top: 40px;
-}
+	.banner {
+		margin-top: 40px;
+	}
 
-.share-block h3 {
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #b4ad9e;
-}
+	.share-block h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+	}
 
-.flex-container-min-1 {
-	display: flex;
-	justify-content: flex-end;
-}
+	.flex-container-min-1 {
+		display: flex;
+		justify-content: flex-end;
+	}
 
-.social-icons1 {
-	list-style-type: none;
-	display: flex;
-	align-items: flex-end;
-	padding-left: 20px;
-}
+	.social-icons1 {
+		list-style-type: none;
+		display: flex;
+		align-items: flex-end;
+		padding-left: 20px;
+	}
 
-.social-icons1 li a {
-	margin: 0 10px;
-}
+	.social-icons1 li a {
+		margin: 0 10px;
+	}
 
-.block-post {
-	background-color: #f0f0f0;
-}
+	.block-post {
+		background-color: #f0f0f0;
+	}
 
-.more_posts h3 {
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #b4ad9e;
-	margin-left: 150px;
-}
+	.more_posts h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+		margin-left: 150px;
+	}
 
-.more_posts-flex {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 60px;
-}
+	.more_posts-flex {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 60px;
+	}
 
-.more_posts-flex article {
-	margin: 20px;
-}
+	.more_posts-flex article {
+		margin: 20px;
+	}
 
-.more_posts-flex article:first-child {
-	margin-left: 150px;
-}
+	.more_posts-flex article:first-child {
+		margin-left: 150px;
+	}
 
-.more_posts-flex article:last-child {
-	margin-right: 150px;
-}
+	.more_posts-flex article:last-child {
+		margin-right: 150px;
+	}
 
-.more_posts-flex img {
-	max-width: 100%;
-}
+	.more_posts-flex img {
+		max-width: 100%;
+	}
 
-.more_posts-flex h1 {
-	font-family: "Playfair Display", serif;
-	font-weight: 400;
-	font-size: 20px;
-	color: #626262;
-}
+	.more_posts-flex h1 {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 20px;
+		color: #626262;
+	}
 
-.comments {
-	/*max-width: 900px;*/
-}
+	.comments {
+		/*max-width: 900px;*/
+	}
 
-.comments h3 {
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #b4ad9e;
-	margin-left: 150px;
-}
+	.comments h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #b4ad9e;
+		margin-left: 150px;
+	}
 
-.comments-block {
-	display: flex;
-	align-items: center;
-	margin-left: 150px;
-	margin-right: 150px;
-}
+	.comments-block {
+		display: flex;
+		align-items: center;
+		margin-left: 150px;
+		margin-right: 150px;
+	}
 
-.comments-block p {
-	font-family: "Playfair Display", serif;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.6;
-	color: #626262;
-}
+	.comments-block p {
+		font-family: "Playfair Display", serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+		color: #626262;
+	}
 
-.comments-block h3 {
-	margin-top: 30px;
-}
+	.comments-block h3 {
+		margin-top: 30px;
+	}
 
-.connected {
-	display: flex;
-	justify-content: flex-end;
-	margin-right: 150px;
-}
+	.connected {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 150px;
+	}
 
-textarea {
-	/*width: 750px;
-	height: 70px;*/
-	resize: none;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: 300;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #000000;
-	border-radius: 5px;
-}
+	textarea {
+		/*width: 750px;
+		height: 70px;*/
+		resize: none;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #000000;
+		border-radius: 5px;
+	}
 
-textarea::-webkit-input-placeholder {
-	color: #c8c8c8;
-	padding-left: 30px;
-	padding-top: 15px;
-}
+	textarea::-webkit-input-placeholder {
+		color: #c8c8c8;
+		padding-left: 30px;
+		padding-top: 15px;
+	}
 
-textarea::-moz-placeholder {
-	color: #c8c8c8;
-}
+	textarea::-moz-placeholder {
+		color: #c8c8c8;
+	}
 
-textarea:-ms-input-placeholder {
+	textarea:-ms-input-placeholder {
+	
+	}
 
-}
+	textarea:-moz-placeholder {
+	
+	}
 
-textarea:-moz-placeholder {
+	.discuss p span {
+		font-weight: bold;
+	}
 
-}
-
-.discuss p span {
-	font-weight: bold;
-}
-
-.avatar {
-	border: 1px solid orangered;
-	margin-right: 40px;
-}
-
+	.avatar {
+		border: 1px solid orangered;
+		margin-right: 40px;
+	}
 /* ---------- /Первый блок: вторая страница ---------- */
 
 
@@ -706,3 +714,381 @@ textarea:-moz-placeholder {
 		padding: 0 10px 0 20px;
 	}
 /* ---------- /Footer ---------- */
+
+/* ---------- Адаптив ---------- */
+	@media screen and (max-width:1000px) {
+		.main_header-logo {
+			margin-right: 70px;
+		}
+
+		nav {
+			margin-right: 70px;
+		}
+
+		.main_menu {
+			padding-left: 0;
+		}
+
+		.main_menu li {
+			margin: 0 50px;
+		}
+
+		.main_menu li:last-child {
+			margin-right: 0;
+		}
+	}
+
+	@media screen and (max-width:850px) {
+		.main_header-logo {
+			font-size: 26px;
+			letter-spacing: 8px;
+			margin: 50px 20px 50px 70px;
+		}
+
+		.main_menu li {
+			margin: 0 40px;
+			font-size: 12px;
+		}
+	
+		.main_post h3 {
+			font-size: 12px;
+			margin: 40px auto 20px auto;
+		}
+	
+		.main_post h1 {
+			font-size: 26px;
+			margin: 0 auto 40px auto;
+		}
+	
+		.main_post p {
+			font-size: 12px;
+			line-height: 1.6;
+		}
+	
+		.comment {
+			font-size: 12px;
+			margin: 40px auto 80px auto;
+		}
+
+		.first-row,
+		.second-row,
+		.third-row {
+			margin-bottom: 70px;
+		}
+
+		.first-row article,
+		.second-row article,
+		.third-row article {
+			margin: 0 35px;
+		}
+
+		.first-row article:first-child,
+		.second-row article:first-child,
+		.third-row article:first-child {
+			margin-left: 70px;
+		}
+
+		.first-row article:last-child,
+		.second-row article:last-child,
+		.third-row article:last-child {
+			margin-right: 70px;
+		}
+
+		.first-row h3,
+		.second-row h3,
+		.third-row h3 {
+			font-size: 12px;
+			margin: 20px auto 10px auto;
+		}
+
+		.first-row h1,
+		.second-row h1,
+		.third-row h1 {
+			font-size: 26px;
+			margin: 0 auto 30px auto;
+		}
+		
+		.first-row p,
+		.second-row p,
+		.third-row p {
+			font-size: 12px;
+		}
+	}
+
+	@media screen and (max-width:700px) {
+		.main_header-logo {
+			font-size: 24px;
+			letter-spacing: 6px;
+			margin: 30px 20px 30px 50px;
+		}
+
+		nav {
+			margin-right: 50px;
+		}
+
+		.main_menu {
+			margin-left: 50px;
+			flex-wrap: nowrap;
+		}
+
+		.main_menu li {
+			margin: 0 30px;
+			font-size: 12px;
+		}
+
+		.main_menu li:first-child {
+			margin-left: 0;
+		}
+
+		.main_foto {
+			margin: 0 50px 30px 50px;
+		}
+
+		.main_post {
+			margin: 0 75px;
+		}
+	
+		.main_post h3 {
+			font-size: 12px;
+			margin: 40px auto 20px auto;
+		}
+	
+		.main_post h1 {
+			font-size: 22px;
+			margin: 0 auto 20px auto;
+		}
+	
+		.main_post p {
+			font-size: 12px;
+		}
+	
+		.comment {
+			font-size: 12px;
+			margin: 20px auto 40px auto;
+		}
+
+		.first-row,
+		.second-row,
+		.third-row {
+			margin-bottom: 40px;
+		}
+
+		.first-row article,
+		.second-row article,
+		.third-row article {
+			margin: 0 25px;
+		}
+
+		.first-row article:first-child,
+		.second-row article:first-child,
+		.third-row article:first-child {
+			margin-left: 50px;
+		}
+
+		.first-row article:last-child,
+		.second-row article:last-child,
+		.third-row article:last-child {
+			margin-right: 50px;
+		}
+
+		.first-row h3,
+		.second-row h3,
+		.third-row h3 {
+			font-size: 12px;
+			margin: 20px auto 10px auto;
+		}
+
+		.first-row h1,
+		.second-row h1,
+		.third-row h1 {
+			font-size: 22px;
+			margin: 0 auto 20px auto;
+		}
+
+		.newsletter {
+			margin-bottom: 60px;
+		}
+		
+		.newsletter h1 {
+			font-size: 22px;
+			margin-bottom: 0;
+			padding: 35px 0;
+		}
+
+		.subscribe {
+			position: relative;
+			max-width: 320px;
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
+
+		.subscribe-input {
+			width: 280px;
+			box-sizing: border-box;
+		}
+
+		.subscribe-img {
+			position: absolute;
+			left: 265px;
+		}
+
+		.footer-flex {
+			/*flex-direction: column;
+			align-content: center;*/
+			flex-wrap: wrap;
+		}
+
+		.privacy,
+		.social {
+			margin: 0 50px;
+		}
+
+		.social p {
+			padding-left: 0;
+		}
+	}
+
+	@media screen and (max-width:480px) {
+		.main_header-logo {
+			font-size: 20px;
+			letter-spacing: 4px;
+			margin: 20px 20px 10px 30px;
+		}
+
+		nav {
+			margin-left: 30px;
+		}
+
+		.main_menu {
+			margin: 10px 0;
+			flex-wrap: nowrap;
+		}
+
+		.main_menu li {
+			margin: 0 36px;
+			font-size: 11px;
+		}
+
+		.main_menu li:first-child {
+			margin-left: 0;
+		}
+
+		.main_foto {
+			margin: 0 30px 15px 30px;
+		}
+
+		.main_post {
+			margin: 0 30px;
+		}
+	
+		.main_post h3 {
+			font-size: 12px;
+			margin: 20px auto 10px auto;
+		}
+	
+		.main_post h1 {
+			font-size: 22px;
+			margin: 0 auto 20px auto;
+		}
+	
+		.main_post p {
+			font-size: 12px;
+		}
+	
+		.comment {
+			font-size: 10px;
+			margin: 10px auto 20px auto;
+		}
+
+		.flex-container {
+			display: block;
+		}
+		
+		.first-row,
+		.second-row,
+		.third-row {
+			display: block;
+			margin-bottom: 20px;
+		}
+		
+		.first-row article,
+		.second-row article,
+		.third-row article {
+			margin: 25px 30px;
+		}
+
+		.first-row article:first-child,
+		.second-row article:first-child,
+		.third-row article:first-child {
+			margin: 25px 30px;
+		}
+
+		.first-row article:last-child,
+		.second-row article:last-child,
+		.third-row article:last-child {
+			margin: 25px 30px;
+		}
+
+		.first-row h3,
+		.second-row h3,
+		.third-row h3 {
+			font-size: 12px;
+			margin: 20px auto 10px auto;
+		}
+
+		.first-row h1,
+		.second-row h1,
+		.third-row h1 {
+			font-size: 22px;
+			margin: 0 auto 20px auto;
+		}
+		
+		.newsletter {
+			margin-bottom: 60px;
+		}
+		
+		.newsletter h1 {
+			font-size: 22px;
+			margin-bottom: 0;
+			padding: 35px 0;
+		}
+
+		.subscribe {
+			position: relative;
+			max-width: 320px;
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
+
+		.subscribe-input {
+			width: 280px;
+			box-sizing: border-box;
+		}
+
+		.subscribe-img {
+			position: absolute;
+			left: 265px;
+		}
+
+		.footer-flex {
+			/*flex-direction: column;
+			align-content: center;*/
+			flex-wrap: wrap;
+		}
+
+		.privacy,
+		.social {
+			margin: 0 50px;
+		}
+
+		.privacy p {
+			font-size: 12px;
+		}
+
+		.social p {
+			font-size: 12px;
+			padding-left: 0;
+		}
+	}
+
+/* ---------- /Адаптив ---------- */
