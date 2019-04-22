@@ -30,7 +30,7 @@
 		margin: 0 auto;
 	}
 /* Временно для разметки */
-	/*
+	
 	.header-container {
 		border: 2px solid red;
 	}
@@ -781,7 +781,7 @@
 		.third-row article {
 			margin: 0 35px;
 		}
-
+/*
 		.first-row article:first-child,
 		.second-row article:first-child,
 		.third-row article:first-child {
@@ -793,7 +793,7 @@
 		.third-row article:last-child {
 			margin-right: 70px;
 		}
-
+*/
 		.first-row h3,
 		.second-row h3,
 		.third-row h3 {
@@ -878,7 +878,7 @@
 		.third-row article {
 			margin: 0 25px;
 		}
-
+/*
 		.first-row article:first-child,
 		.second-row article:first-child,
 		.third-row article:first-child {
@@ -890,7 +890,7 @@
 		.third-row article:last-child {
 			margin-right: 50px;
 		}
-
+*/
 		.first-row h3,
 		.second-row h3,
 		.third-row h3 {
@@ -949,28 +949,36 @@
 	}
 
 	@media screen and (max-width:480px) {
+		.header-container {
+			display: block;
+		}
+		
 		.main_header-logo {
 			font-size: 20px;
 			letter-spacing: 4px;
-			margin: 20px 20px 10px 30px;
+			margin: 20px 30px 10px 30px;
 		}
 
 		nav {
-			margin-left: 30px;
+			margin: 10px 30px;
 		}
 
 		.main_menu {
 			margin: 10px 0;
-			flex-wrap: nowrap;
+			flex-wrap: wrap;
 		}
 
 		.main_menu li {
-			margin: 0 36px;
+			margin: 0 28px;
 			font-size: 11px;
 		}
 
 		.main_menu li:first-child {
 			margin-left: 0;
+		}
+
+		.main_menu li:last-child {
+			margin-right: 0;
 		}
 
 		.main_foto {
@@ -1014,9 +1022,10 @@
 		.first-row article,
 		.second-row article,
 		.third-row article {
+			max-width: 100%;
 			margin: 25px 30px;
 		}
-
+/*
 		.first-row article:first-child,
 		.second-row article:first-child,
 		.third-row article:first-child {
@@ -1028,7 +1037,7 @@
 		.third-row article:last-child {
 			margin: 25px 30px;
 		}
-
+*/
 		.first-row h3,
 		.second-row h3,
 		.third-row h3 {
@@ -1071,8 +1080,6 @@
 		}
 
 		.footer-flex {
-			/*flex-direction: column;
-			align-content: center;*/
 			flex-wrap: wrap;
 		}
 
