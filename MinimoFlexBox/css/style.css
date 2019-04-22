@@ -375,6 +375,271 @@
 		}
 /* ---------- /Кнопка more ---------- */
 
+/* ---------- Первый блок: вторая страница ---------- */
+
+.flex-container-big {
+	display: flex;
+}
+
+.content-min-left {
+	max-width: 660px;
+	box-sizing: border-box;
+	margin-left: 150px;
+	margin-bottom: 100px;
+}
+
+.content-min-right {
+	max-width: 270px; /* 320px */
+	box-sizing: border-box;
+	margin-right: 70px;
+}
+
+.main_post-1 p {
+	padding-bottom: 60px;
+}
+
+.main_post-1 p span {
+	font-weight: bold;
+}
+
+.main_post-1 img {
+	max-width: 100%;
+	margin-bottom: 50px;
+}
+
+.quote {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 1.6;
+	color: #626262;
+}
+
+.quote blockquote {
+	margin: 14px 20px;
+}
+
+.about img,
+.banner img {
+	max-width: 100%;
+}
+
+.about h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 24px;
+	color: #626262;
+}
+
+.about p {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #626262;
+}
+
+.sidebar_social-icons {
+	display: flex;
+	justify-content: flex-start;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.sidebar_social-icons img {
+	padding: 0 7.5px;
+}
+
+.first-item img {
+	padding-left: 0;
+}
+
+.top-post h3 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #b4ad9e;
+	margin: 50px auto 30px auto;
+}
+
+.posts ul li {
+	color: #626262;
+}
+
+.posts ul li a {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.6;
+	text-decoration: none;
+	color: #626262;
+}
+
+.posts ul li a:hover {
+	text-decoration: none;
+	color: #bbb7db;
+}
+
+.posts ul li p {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #b4ad9e;
+}
+
+.banner {
+	margin-top: 40px;
+}
+
+.share-block h3 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #b4ad9e;
+}
+
+.flex-container-min-1 {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-icons1 {
+	list-style-type: none;
+	display: flex;
+	align-items: flex-end;
+	padding-left: 20px;
+}
+
+.social-icons1 li a {
+	margin: 0 10px;
+}
+
+.block-post {
+	background-color: #f0f0f0;
+}
+
+.more_posts h3 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #b4ad9e;
+	margin-left: 150px;
+}
+
+.more_posts-flex {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+}
+
+.more_posts-flex article {
+	margin: 20px;
+}
+
+.more_posts-flex article:first-child {
+	margin-left: 150px;
+}
+
+.more_posts-flex article:last-child {
+	margin-right: 150px;
+}
+
+.more_posts-flex img {
+	max-width: 100%;
+}
+
+.more_posts-flex h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #626262;
+}
+
+.comments {
+	/*max-width: 900px;*/
+}
+
+.comments h3 {
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #b4ad9e;
+	margin-left: 150px;
+}
+
+.comments-block {
+	display: flex;
+	align-items: center;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.comments-block p {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #626262;
+}
+
+.comments-block h3 {
+	margin-top: 30px;
+}
+
+.connected {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 150px;
+}
+
+textarea {
+	/*width: 750px;
+	height: 70px;*/
+	resize: none;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #000000;
+	border-radius: 5px;
+}
+
+textarea::-webkit-input-placeholder {
+	color: #c8c8c8;
+	padding-left: 30px;
+	padding-top: 15px;
+}
+
+textarea::-moz-placeholder {
+	color: #c8c8c8;
+}
+
+textarea:-ms-input-placeholder {
+
+}
+
+textarea:-moz-placeholder {
+
+}
+
+.discuss p span {
+	font-weight: bold;
+}
+
+.avatar {
+	border: 1px solid orangered;
+	margin-right: 40px;
+}
+
+/* ---------- /Первый блок: вторая страница ---------- */
+
+
 /* ---------- Пространство перед футером в соответствии с макетом ---------- */
 	.air-block {
 		visibility: hidden;
@@ -399,6 +664,7 @@
 	.privacy {
 		max-width: 550px;
 		min-width: 250px;
+		margin-left: 150px;
 		/*flex: 2;*/
 	}
 
@@ -421,6 +687,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		margin-right: 60px;
 		/*flex: 1;*/
 	}
 
@@ -436,6 +703,6 @@
 	.social-icons {
 		display: flex;
 		align-items: center;
-		padding: 0 50px 0 20px;
+		padding: 0 10px 0 20px;
 	}
 /* ---------- /Footer ---------- */

@@ -24,7 +24,7 @@
 		margin: 0 auto;
 	}
 /* Временно для разметки */
-	
+	/*
 	.header-container {
 		border: 2px solid red;
 	}
@@ -393,6 +393,11 @@
 		text-transform: uppercase;
 		color: #b4ad9e;
 		margin-left: 150px;
+		padding-top: 60px;
+	}
+
+	.more_posts h1 {
+		padding-bottom: 60px;
 	}
 
 	.more_posts-flex {
@@ -425,7 +430,7 @@
 	}
 
 	.comments {
-		max-width: 900px;
+		/*max-width: 900px;*/
 	}
 
 	.comments h3 {
@@ -434,11 +439,14 @@
 		font-size: 14px;
 		text-transform: uppercase;
 		color: #b4ad9e;
+		margin-left: 150px;
 	}
 
 	.comments-block {
 		display: flex;
 		align-items: center;
+		margin-left: 150px;
+		margin-right: 150px;
 	}
 
 	.comments-block p {
@@ -451,11 +459,17 @@
 
 	.comments-block h3 {
 		margin-top: 30px;
+		margin-left: 0;
+	}
+
+	.connected {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 150px;
 	}
 
 	textarea {
-		/*width: 750px;
-		height: 70px;*/
+		/*width: 100%;*/
 		resize: none;
 		font-family: "Ubuntu", sans-serif;
 		font-weight: 300;
@@ -488,7 +502,7 @@
 	}
 
 	.avatar {
-		border: 1px solid orangered;
+		/*border: 1px solid orangered;*/
 		margin-right: 40px;
 	}
 
@@ -660,6 +674,7 @@
 	.privacy {
 		max-width: 550px;
 		min-width: 250px;
+		margin-left: 150px;
 		/*flex: 2;*/
 	}
 
@@ -682,6 +697,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		margin-right: 60px;
 		/*flex: 1;*/
 	}
 
@@ -697,6 +713,6 @@
 	.social-icons {
 		display: flex;
 		align-items: center;
-		padding: 0 50px 0 20px;
+		padding: 0 10px 0 20px;
 	}
 /* ---------- /Footer ---------- */
