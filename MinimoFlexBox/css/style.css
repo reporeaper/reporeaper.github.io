@@ -30,7 +30,7 @@
 		margin: 0 auto;
 	}
 /* Временно для разметки */
-	
+	/*
 	.header-container {
 		border: 2px solid red;
 	}
@@ -846,7 +846,7 @@
 		}
 
 		.main_post {
-			margin: 0 75px;
+			margin: 0 50px;
 		}
 	
 		.main_post h3 {
@@ -879,7 +879,7 @@
 		.third-row article {
 			margin: 0 25px;
 		}
-/*
+
 		.first-row article:first-child,
 		.second-row article:first-child,
 		.third-row article:first-child {
@@ -891,7 +891,7 @@
 		.third-row article:last-child {
 			margin-right: 50px;
 		}
-*/
+
 		.first-row h3,
 		.second-row h3,
 		.third-row h3 {
@@ -970,7 +970,7 @@
 		}
 
 		.main_menu li {
-			margin: 0 28px;
+			margin: 0 24px;
 			font-size: 11px;
 		}
 
@@ -1026,19 +1026,19 @@
 			width: auto;
 			margin: 25px 30px;
 		}
-/*
+
 		.first-row article:first-child,
 		.second-row article:first-child,
 		.third-row article:first-child {
-			margin: 25px 30px;
+			margin-left: 30px;
 		}
 
 		.first-row article:last-child,
 		.second-row article:last-child,
 		.third-row article:last-child {
-			margin: 25px 30px;
+			margin-right: 30px;
 		}
-*/
+
 		.first-row h3,
 		.second-row h3,
 		.third-row h3 {
