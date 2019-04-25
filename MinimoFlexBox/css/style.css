@@ -30,7 +30,7 @@
 		margin: 0 auto;
 	}
 /* Временно для разметки */
-	/*
+	
 	.header-container {
 		border: 2px solid red;
 	}
@@ -361,7 +361,8 @@
 /* ---------- Кнопка more ---------- */
 	.load-more {
 		text-align: center;
-		margin-top: 80px; 
+		margin-top: 80px;
+		margin-bottom: 200px;
 	}
 
 		a.more {
@@ -649,7 +650,7 @@
 
 
 /* ---------- Пространство перед футером в соответствии с макетом ---------- */
-	.air-block {
+	/*.air-block {
 		visibility: hidden;
 	}
 /* ---------- /Пространство перед футером в соответствии с макетом ---------- */
@@ -1022,7 +1023,7 @@
 		.first-row article,
 		.second-row article,
 		.third-row article {
-			max-width: 100%;
+			width: auto;
 			margin: 25px 30px;
 		}
 /*
