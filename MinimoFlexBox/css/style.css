@@ -30,7 +30,7 @@
 		margin: 0 auto;
 	}
 /* Временно для разметки */
-	/*
+	
 	.header-container {
 		border: 2px solid red;
 	}
@@ -782,19 +782,7 @@
 		.third-row article {
 			margin: 0 35px;
 		}
-/*
-		.first-row article:first-child,
-		.second-row article:first-child,
-		.third-row article:first-child {
-			margin-left: 70px;
-		}
 
-		.first-row article:last-child,
-		.second-row article:last-child,
-		.third-row article:last-child {
-			margin-right: 70px;
-		}
-*/
 		.first-row h3,
 		.second-row h3,
 		.third-row h3 {
@@ -949,7 +937,7 @@
 		}
 	}
 
-	@media screen and (max-width:480px) {
+	@media screen and (max-width:480px) { 
 		.header-container {
 			display: block;
 		}
@@ -988,6 +976,7 @@
 
 		.main_post {
 			margin: 0 30px;
+			min-width: auto;
 		}
 	
 		.main_post h3 {
@@ -1080,13 +1069,17 @@
 			left: 265px;
 		}
 
+		.load-more {
+			margin-bottom: 120px;
+		}
+
 		.footer-flex {
 			flex-wrap: wrap;
 		}
 
 		.privacy,
 		.social {
-			margin: 0 50px;
+			margin: 0 30px;
 		}
 
 		.privacy p {
@@ -1097,6 +1090,87 @@
 			font-size: 12px;
 			padding-left: 0;
 		}
+	}
+
+	@media screen and (max-width:320px) { 		
+		.main_header-logo {
+			margin: 20px 20px 10px 20px;
+		}
+
+		nav {
+			margin: 10px 20px;
+		}
+
+		.main_menu li {
+			margin: 0 10px;
+			font-size: 11px;
+		}
+
+		.main_foto {
+			margin: 0 20px 15px 20px;
+		}
+
+		.main_post {
+			margin: 0 20px;
+			min-width: auto;
+		}
+		
+		.first-row article,
+		.second-row article,
+		.third-row article {
+			width: auto;
+			margin: 20px 20px;
+		}
+
+		.first-row article:first-child,
+		.second-row article:first-child,
+		.third-row article:first-child {
+			margin-left: 20px;
+		}
+
+		.first-row article:last-child,
+		.second-row article:last-child,
+		.third-row article:last-child {
+			margin-right: 20px;
+		}
+		
+		.newsletter {
+			margin-bottom: 40px;
+		}
+		
+		.newsletter h1 {
+			font-size: 20px;
+			margin-bottom: 0;
+			padding: 30px 0;
+		}
+
+		.subscribe {
+			position: relative;
+			max-width: 320px;
+			margin: 0 auto;
+			padding-bottom: 20px;
+		}
+
+		.subscribe-input {
+			width: 240px;
+			box-sizing: border-box;
+		}
+
+		.subscribe-img {
+			position: absolute;
+			left: 240px;
+		}
+
+		.footer-flex {
+			flex-wrap: wrap;
+		}
+
+		.privacy,
+		.social {
+			margin: 0 20px;
+		}
+
+		
 	}
 
 /* ---------- /Адаптив ---------- */
