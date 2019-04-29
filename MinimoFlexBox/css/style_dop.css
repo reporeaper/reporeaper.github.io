@@ -115,6 +115,10 @@
 		color: #000;
 	}
 
+	nav {
+		margin-right: 70px;
+	}
+
 	.main_menu li  {
 		font-family: "Playfair Display", serif;
 		font-size: 14px;
@@ -122,6 +126,10 @@
 		list-style-type: none;
 		color: #626262;
 		margin: 0 70px 0 70px;
+	}
+
+	.main_menu li:last-child {
+		margin-right: 0;
 	}
 	
 	.main_menu li a {
@@ -156,6 +164,7 @@
 	.main_menu {
 		display: flex;
 		flex-wrap: wrap;
+		padding-left: 0;
 	}
 
 /* ---------- /Шапка, навигация flex ---------- */
@@ -468,11 +477,16 @@
 		margin-right: 150px;
 		margin-bottom: 200px;
 	}
+	/* Задаем ширину "родительского блока для textarea */
+	.text-area {
+		max-width: 770px;
+		margin-right: 20px;
+	}
 
 	textarea {
-		width: 100%;
+		width: 100%; /* Ширина блока textarea будет изменяться в зависимости от ширины экрана (окна браузера) */
 		box-sizing: border-box;
-		resize: none;
+		resize: inherit;
 		font-family: "Ubuntu", sans-serif;
 		font-weight: 300;
 		font-size: 14px;
@@ -720,7 +734,7 @@
 /* ---------- /Footer ---------- */
 
 /* ---------- Адаптив ---------- */
-@media screen and (max-width:1000px) {
+/*@media screen and (max-width:1000px) {
 	.main_header-logo {
 		margin-right: 70px;
 	}
