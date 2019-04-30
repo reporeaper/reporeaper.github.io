@@ -388,7 +388,7 @@
 		list-style-type: none;
 		display: flex;
 		align-items: flex-end;
-		padding-left: 20px;
+		padding-left: 0;
 	}
 
 	.social-icons1 li a {
@@ -482,6 +482,10 @@
 		justify-content: flex-end;
 		margin-right: 150px;
 		margin-bottom: 200px;
+	}
+
+	.connected h3 {
+		margin: 14px;
 	}
 	/* Задаем ширину "родительского блока для textarea */
 	.text-area {
@@ -942,7 +946,7 @@
 	}
 }
 
-/*@media screen and (max-width:480px) {
+@media screen and (max-width:480px) {
 	.header-container {
 		display: block;
 	}
@@ -979,98 +983,55 @@
 		margin: 0 30px 15px 30px;
 	}
 
-	.main_post {
+	.flex-container-big {
+		display: block;
+	}
+
+	.content-min-left {
+		margin: 0 30px 50px;
+	}
+
+	.main_post-1 h3 {
+		font-size: 12px;
+		margin: 20px auto 10px auto;
+	}
+
+	.main_post-1 h1 {
+		font-size: 22px;
+		margin: 0 auto 20px auto;
+	}
+
+	.main_post-1 p {
+		font-size: 12px;
+	}
+
+	.content-min-right {
+		max-width: 100%;
 		margin: 0 30px;
 	}
 
-	.main_post h3 {
-		font-size: 12px;
-		margin: 20px auto 10px auto;
-	}
-
-	.main_post h1 {
-		font-size: 22px;
-		margin: 0 auto 20px auto;
-	}
-
-	.main_post p {
-		font-size: 12px;
-	}
-
-	.comment {
-		font-size: 10px;
-		margin: 10px auto 20px auto;
-	}
-
-	.flex-container {
-		display: block;
-	}
-	
-	.first-row,
-	.second-row,
-	.third-row {
-		display: block;
+	.banner {
 		margin-bottom: 20px;
 	}
-	
-	.first-row article,
-	.second-row article,
-	.third-row article {
-		width: auto;
-		margin: 25px 30px;
+
+	.more_posts h3 {
+		margin: 14px 30px;
 	}
 
-	.first-row article:first-child,
-	.second-row article:first-child,
-	.third-row article:first-child {
+	.more_posts-flex {
+		display: block;
+	}
+
+	.more_posts-flex article {
+		margin: 30px;
+	}
+
+	.more_posts-flex article:first-child {
 		margin-left: 30px;
 	}
 
-	.first-row article:last-child,
-	.second-row article:last-child,
-	.third-row article:last-child {
+	.more_posts-flex article:last-child {
 		margin-right: 30px;
-	}
-
-	.first-row h3,
-	.second-row h3,
-	.third-row h3 {
-		font-size: 12px;
-		margin: 20px auto 10px auto;
-	}
-
-	.first-row h1,
-	.second-row h1,
-	.third-row h1 {
-		font-size: 22px;
-		margin: 0 auto 20px auto;
-	}
-	
-	.newsletter {
-		margin-bottom: 60px;
-	}
-	
-	.newsletter h1 {
-		font-size: 22px;
-		margin-bottom: 0;
-		padding: 35px 0;
-	}
-
-	.subscribe {
-		position: relative;
-		max-width: 320px;
-		margin: 0 auto;
-		padding-bottom: 20px;
-	}
-
-	.subscribe-input {
-		width: 280px;
-		box-sizing: border-box;
-	}
-
-	.subscribe-img {
-		position: absolute;
-		left: 265px;
 	}
 
 	.footer-flex {
@@ -1092,7 +1053,7 @@
 	}
 }
 
-@media screen and (max-width:320px) { 		
+/*@media screen and (max-width:320px) { 		
 	.main_header-logo {
 		margin: 20px 20px 10px 20px;
 	}
