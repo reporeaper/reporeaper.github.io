@@ -802,6 +802,10 @@
 		.third-row p {
 			font-size: 12px;
 		}
+
+		.privacy {
+			margin-left: 75px;
+		}
 	}
 
 	@media screen and (max-width:700px) {
@@ -922,8 +926,6 @@
 		}
 
 		.footer-flex {
-			/*flex-direction: column;
-			align-content: center;*/
 			flex-wrap: wrap;
 		}
 
@@ -1092,7 +1094,7 @@
 		}
 	}
 
-	@media screen and (max-width:320px) { 		
+	/*@media screen and (max-width:320px) { 		
 		.main_header-logo {
 			margin: 20px 20px 10px 20px;
 		}
@@ -1169,8 +1171,6 @@
 		.social {
 			margin: 0 20px;
 		}
-
-		
 	}
 
 /* ---------- /Адаптив ---------- */

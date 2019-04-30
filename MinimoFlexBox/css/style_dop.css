@@ -91,6 +91,10 @@
 	.comments-block {
 		border: 2px solid black;
 	}
+
+	.main_post-1 img {
+		border: 1px solid red;
+	}
 	
 /* /Временно для разметки */
 
@@ -402,6 +406,7 @@
 		text-transform: uppercase;
 		color: #b4ad9e;
 		margin-left: 150px;
+		margin-right: 150px;
 		padding-top: 60px;
 	}
 
@@ -449,6 +454,7 @@
 		text-transform: uppercase;
 		color: #b4ad9e;
 		margin-left: 150px;
+		margin-right: 150px;
 	}
 
 	.comments-block {
@@ -734,7 +740,7 @@
 /* ---------- /Footer ---------- */
 
 /* ---------- Адаптив ---------- */
-/*@media screen and (max-width:1000px) {
+@media screen and (max-width:1000px) {
 	.main_header-logo {
 		margin-right: 70px;
 	}
@@ -754,8 +760,16 @@
 	.main_menu li:last-child {
 		margin-right: 0;
 	}
+
+	.content-min-left {
+		margin-right: 15px;
+	}
+
+	.content-min-right {
+		margin-left: 15px;
+	}
 }
-/*
+
 @media screen and (max-width:850px) {
 	.main_header-logo {
 		font-size: 26px;
@@ -768,68 +782,43 @@
 		font-size: 12px;
 	}
 
-	.main_post h3 {
-		font-size: 12px;
-		margin: 40px auto 20px auto;
-	}
-
-	.main_post h1 {
-		font-size: 26px;
-		margin: 0 auto 40px auto;
-	}
-
-	.main_post p {
-		font-size: 12px;
-		line-height: 1.6;
-	}
-
-	.comment {
-		font-size: 12px;
-		margin: 40px auto 80px auto;
-	}
-
-	.first-row,
-	.second-row,
-	.third-row {
+	.content-min-left {
+		margin-left: 75px;
 		margin-bottom: 70px;
 	}
 
-	.first-row article,
-	.second-row article,
-	.third-row article {
-		margin: 0 35px;
-	}
-/*
-	.first-row article:first-child,
-	.second-row article:first-child,
-	.third-row article:first-child {
-		margin-left: 70px;
+	.main_post-1 img {
+		margin-bottom: 25px;
 	}
 
-	.first-row article:last-child,
-	.second-row article:last-child,
-	.third-row article:last-child {
-		margin-right: 70px;
-	}
-*/
-/*	.first-row h3,
-	.second-row h3,
-	.third-row h3 {
-		font-size: 12px;
-		margin: 20px auto 10px auto;
+	.more_posts h3 {
+		margin-left: 75px;
+		margin-right: 75px;
+		padding-top: 40px;
 	}
 
-	.first-row h1,
-	.second-row h1,
-	.third-row h1 {
-		font-size: 26px;
-		margin: 0 auto 30px auto;
+	.more_posts-flex article:first-child {
+		margin-left: 75px;
 	}
-	
-	.first-row p,
-	.second-row p,
-	.third-row p {
-		font-size: 12px;
+
+	.more_posts-flex article:last-child {
+		margin-right: 75px;
+	}
+
+	.top-post h3 {
+		margin-top: 30px;
+	}
+
+	.comments>h3,
+	.connected>h3,
+	.connected,
+	.comments-block {
+		margin-left: 75px;
+		margin-right: 75px;
+	}
+
+	.privacy {
+		margin-left: 75px;
 	}
 }
 
@@ -862,98 +851,85 @@
 		margin: 0 50px 30px 50px;
 	}
 
+	.content-min-left {
+		margin-left: 50px;
+		margin-right: 10px;
+	}
+
+	.content-min-right {
+		margin-right: 50px;
+		margin-left: 10px;
+	}
+
 	.main_post {
 		margin: 0 50px;
 	}
 
-	.main_post h3 {
+	.main_post-1 h3 {
 		font-size: 12px;
 		margin: 40px auto 20px auto;
 	}
 
-	.main_post h1 {
+	.top-post h3 {
+		font-size: 12px;
+	}
+
+	.main_post-1 h1,
+	.about h1 {
 		font-size: 22px;
 		margin: 0 auto 20px auto;
 	}
 
-	.main_post p {
+	.main_post-1 p,
+	.about p {
 		font-size: 12px;
+		padding-bottom: 30px;
 	}
 
-	.comment {
-		font-size: 12px;
-		margin: 20px auto 40px auto;
+	.posts ul li a {
+		font-size: 14px;
+		line-height: 1.4;
 	}
 
-	.first-row,
-	.second-row,
-	.third-row {
-		margin-bottom: 40px;
+	.banner {
+		margin-top: 20px;
 	}
 
-	.first-row article,
-	.second-row article,
-	.third-row article {
-		margin: 0 25px;
-	}
-
-	.first-row article:first-child,
-	.second-row article:first-child,
-	.third-row article:first-child {
+	.more_posts h3 {
 		margin-left: 50px;
-	}
-
-	.first-row article:last-child,
-	.second-row article:last-child,
-	.third-row article:last-child {
 		margin-right: 50px;
 	}
 
-	.first-row h3,
-	.second-row h3,
-	.third-row h3 {
-		font-size: 12px;
-		margin: 20px auto 10px auto;
+	.more_posts-flex {
+		margin-bottom: 40px;
 	}
 
-	.first-row h1,
-	.second-row h1,
-	.third-row h1 {
-		font-size: 22px;
-		margin: 0 auto 20px auto;
+	.more_posts-flex article {
+		margin: 10px;
 	}
 
-	.newsletter {
-		margin-bottom: 60px;
-	}
-	
-	.newsletter h1 {
-		font-size: 22px;
-		margin-bottom: 0;
-		padding: 35px 0;
+	.more_posts-flex article:first-child {
+		margin-left: 50px;
 	}
 
-	.subscribe {
-		position: relative;
-		max-width: 320px;
-		margin: 0 auto;
-		padding-bottom: 20px;
+	.more_posts-flex article:last-child {
+		margin-right: 50px;
 	}
 
-	.subscribe-input {
-		width: 280px;
-		box-sizing: border-box;
+	.more_posts-flex h1 {
+		font-size: 16px;
 	}
 
-	.subscribe-img {
-		position: absolute;
-		left: 265px;
+	.comments>h3,
+	.connected>h3,
+	.connected,
+	.comments-block {
+		margin-left: 50px;
+		margin-right: 50px;
 	}
 
 	.footer-flex {
-		/*flex-direction: column;
-		align-content: center;*/
-/*		flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 
 	.privacy,
@@ -966,7 +942,7 @@
 	}
 }
 
-@media screen and (max-width:480px) {
+/*@media screen and (max-width:480px) {
 	.header-container {
 		display: block;
 	}
@@ -1113,6 +1089,85 @@
 	.social p {
 		font-size: 12px;
 		padding-left: 0;
+	}
+}
+
+@media screen and (max-width:320px) { 		
+	.main_header-logo {
+		margin: 20px 20px 10px 20px;
+	}
+
+	nav {
+		margin: 10px 20px;
+	}
+
+	.main_menu li {
+		margin: 0 10px;
+		font-size: 11px;
+	}
+
+	.main_foto {
+		margin: 0 20px 15px 20px;
+	}
+
+	.main_post {
+		margin: 0 20px;
+		min-width: auto;
+	}
+		
+	.first-row article,
+	.second-row article,
+	.third-row article {
+		width: auto;
+		margin: 20px 20px;
+	}
+
+	.first-row article:first-child,
+	.second-row article:first-child,
+	.third-row article:first-child {
+		margin-left: 20px;
+	}
+
+	.first-row article:last-child,
+	.second-row article:last-child,
+	.third-row article:last-child {
+		margin-right: 20px;
+	}
+		
+	.newsletter {
+		margin-bottom: 40px;
+	}
+		
+	.newsletter h1 {
+		font-size: 20px;
+		margin-bottom: 0;
+		padding: 30px 0;
+	}
+
+	.subscribe {
+		position: relative;
+		max-width: 320px;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	.subscribe-input {
+		width: 240px;
+		box-sizing: border-box;
+	}
+
+	.subscribe-img {
+		position: absolute;
+		left: 240px;
+	}
+
+	.footer-flex {
+		flex-wrap: wrap;
+	}
+
+	.privacy,
+	.social {
+		margin: 0 20px;
 	}
 }
 
