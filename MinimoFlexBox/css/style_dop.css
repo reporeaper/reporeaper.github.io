@@ -24,7 +24,7 @@
 		margin: 0 auto;
 	}
 /* Временно для разметки */
-	
+	/*
 	.header-container {
 		border: 2px solid red;
 	}
@@ -1034,6 +1034,18 @@
 		margin-right: 30px;
 	}
 
+	.more_posts-flex article h1 {
+		padding-bottom: 20px;
+	}
+
+	.comments>h3,
+	.connected>h3,
+	.connected,
+	.comments-block {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
 	.footer-flex {
 		flex-wrap: wrap;
 	}
@@ -1053,7 +1065,7 @@
 	}
 }
 
-/*@media screen and (max-width:320px) { 		
+@media screen and (max-width:320px) { 		
 	.main_header-logo {
 		margin: 20px 20px 10px 20px;
 	}
@@ -1076,50 +1088,55 @@
 		min-width: auto;
 	}
 		
-	.first-row article,
-	.second-row article,
-	.third-row article {
-		width: auto;
-		margin: 20px 20px;
+	.content-min-left {
+		margin: 0 20px 40px;
 	}
 
-	.first-row article:first-child,
-	.second-row article:first-child,
-	.third-row article:first-child {
+	.main_post-1 h3 {
+		font-size: 11px;
+		margin: 20px auto 10px auto;
+	}
+
+	.main_post-1 h1 {
+		font-size: 20px;
+		margin: 0 auto 20px auto;
+	}
+
+	.main_post-1 p {
+		
+	}
+
+	.content-min-right {
+		max-width: 100%;
+		margin: 0 20px;
+	}
+
+	.more_posts h3 {
+		margin: 14px 20px;
+	}
+
+	.more_posts-flex article {
+		margin: 20px;
+	}
+
+	.more_posts-flex article:first-child {
 		margin-left: 20px;
 	}
 
-	.first-row article:last-child,
-	.second-row article:last-child,
-	.third-row article:last-child {
+	.more_posts-flex article:last-child {
 		margin-right: 20px;
 	}
-		
-	.newsletter {
-		margin-bottom: 40px;
-	}
-		
-	.newsletter h1 {
-		font-size: 20px;
-		margin-bottom: 0;
-		padding: 30px 0;
+
+	.comments-block {
+		display: block;
 	}
 
-	.subscribe {
-		position: relative;
-		max-width: 320px;
-		margin: 0 auto;
-		padding-bottom: 20px;
-	}
-
-	.subscribe-input {
-		width: 240px;
-		box-sizing: border-box;
-	}
-
-	.subscribe-img {
-		position: absolute;
-		left: 240px;
+	.comments>h3,
+	.connected>h3,
+	.connected,
+	.comments-block {
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 
 	.footer-flex {
