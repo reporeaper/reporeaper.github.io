@@ -11,17 +11,33 @@
 /* ------- /Класс для скрытия элементов разметки ----- */
  
 /* ---------- Основная разметка ---------- */
+
+	.container {
+		border: 2px solid red;
+		margin-left: 2.3%;
+		margin-right: 2.3%;
+	}
+
 	html {
 		box-sizing: border-box;
 	}
 
 	body {
 		font-family: "Roboto", serif;
-	}
-
-	.content {
+		background-color: #839d8f;
+		min-width: 900px;
 		max-width: 1200px;
 		margin: 0 auto;
+		border: 1px solid black;
+	}
+
+	header,
+	nav {
+		display: flex;
+	}
+
+	nav {
+		align-items: center;
 	}
 
 
