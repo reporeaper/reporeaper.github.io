@@ -1,6 +1,30 @@
-﻿h1 {
-    font-family: "Roboto", serif;
-}
+﻿/* ------- Класс для скрытия элементов разметки ----- */
+
+	.visually-hidden {
+		position: absolute;
+		clip: rect(0 0 0 0);
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+ 	}
+ 
+/* ------- /Класс для скрытия элементов разметки ----- */
+ 
+/* ---------- Основная разметка ---------- */
+	html {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: "Roboto", serif;
+	}
+
+	.content {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+
 
 
 
