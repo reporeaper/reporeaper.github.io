@@ -23,7 +23,7 @@
 	}
 
 	body {
-		font-family: "Roboto", serif;
+		font-family: "Roboto", "Arial" serif;
 		background-color: #839d8f;
 		min-width: 900px;
 		max-width: 1200px;
@@ -40,6 +40,10 @@
 		align-items: center;
 	}
 
+	.slider-img {
+		z-index: -1;
+		margin-top: -64px;
+	}
 
 
 
