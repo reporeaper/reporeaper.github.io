@@ -14,28 +14,34 @@
                 <div class="sqr">
                     <p>C</p>
                 </div>
-                <p>Portfolio</p>
-                <p>Creative</p>
+                <p class="portf">Portfolio</p>
+                <p class="creat">Creative</p>
             </div>
         </header>
 
         <section class="main-block">
             <p><span>404</span></p>
-            <p>Error Not Found!</p>
+            <p class="error">Error Not Found !</p>
 
-            <form action="" method="GET">
-                <label>
-                    <input type="search" placeholder="Search ...">
-                    <button>Search</button>
-                </label>
-            </form>
+            <div class="search-area">
+                <form action="https://echo.htmlacademy.ru" method="GET">
+                    <label>
+                        <!--<input type="search" placeholder="Search ...">-->
+                        <input type="text" name="Search" placeholder="Search ..." class="search">
+                        <input type="submit" value="search">
+                        <!--<button class="btn">Search</button>-->
+                    </label>
+                </form>
+            </div>
 
             <h2>Where are we?</h2>
             <p>The page you are looking for was moved, removed, renamed or might never existed</p>
-            <label>
-                <img src="img/home.jpg" alt="">
-                <p>GO BACK HOME</p>
-            </label>
+            <div class="home">
+                <label>
+                    <a href="#"><img src="img/home.jpg" alt=""></a>
+                    <p>GO BACK HOME</p>
+                </label>
+            </div>
         </section>
 
         <footer class="main-footer">

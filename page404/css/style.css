@@ -1,4 +1,4 @@
-﻿/* font-family: 'Merriweather', "Arial", serif; */
+﻿/* font-family: 'Merriweather' serif; */
 @font-face {
     font-family: 'Merriweather-Light';
     src: url('../fonts/web/Merriweather-Light.eot?#iefix') format('embedded-opentype'),
@@ -30,20 +30,110 @@
     font-style: normal;
 }
 
-body {
-    background-color: #f8f8f8;
-    font-family: 'Merriweather', "Arial", serif;
+/* font-family: 'MicrosoftHimalaya' serif; */
+@font-face {
+    font-family: 'MicrosoftHimalaya';
+    src: url('../fonts/web/MicrosoftHimalaya.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/web/MicrosoftHimalaya.woff') format('woff'),
+    url('../fonts/web/MicrosoftHimalaya.ttf')  format('truetype'),
+    url('../fonts/web/MicrosoftHimalaya.svg#MicrosoftHimalaya') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'IskoolaPota', "Arial", serif; */
+@font-face {
+    font-family: 'IskoolaPota';
+    src: url('../fonts/web/IskoolaPota.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/web/IskoolaPota.woff') format('woff'),
+    url('../fonts/web/IskoolaPota.ttf')  format('truetype'),
+    url('../fonts/web/IskoolaPota.svg#IskoolaPota') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    font-family: 'Merriweather', serif;
+}
+
+/* Стили Header */
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 44px;
+}
+
 .sqr {
-    width: 38px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
     background-color: #ff9211;
+    margin: 0 auto;
 }
 
 .sqr p {
+    font-family: 'IskoolaPota', serif;
+    font-weight: 300;
     font-size: 37px;
     color: #fff;
-    padding-left: 6px;
+    padding-left: 8px;
+}
+
+.portf {
+    /*font-family: 'Merriweather', serif;*/
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0 10px 0;
+}
+
+.creat {
+    font-family: 'MicrosoftHimalaya', serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 14px;
+    margin: 0;
+}
+
+/* Стили основного блока */
+
+.main-block>p>span {
+    font-weight: bold;
+    font-size: 200px;
+    color: #424242;
+    letter-spacing: 10px;
+}
+
+.main-block p,
+h2 {
+    text-align: center;
+}
+
+.error {
+    font-size: 20px;
+    padding-left: 20px;
+    margin-top: -47px;
+    margin-bottom: 40px;
+    color: #424242;
+}
+
+.search-area {
+    padding: 10px;
+}
+
+.search-area input[type="text"],
+.search-area input[type="submit"] {
+    width: 520px;
+    font-weight: 300;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    padding: 12px 20px;
 }
