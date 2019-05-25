@@ -61,7 +61,7 @@ body {
     font-family: 'Merriweather', serif;
 }
 
-/* Стили Header */
+/*---------- Стили Header ----------*/
 
 .main-header {
     display: flex;
@@ -102,7 +102,7 @@ body {
     margin: 0;
 }
 
-/* Стили основного блока */
+/*---------- Стили основного блока ----------*/
 
 .main-block>p>span {
     font-weight: bold;
@@ -111,29 +111,101 @@ body {
     letter-spacing: 10px;
 }
 
-.main-block p,
-h2 {
-    text-align: center;
-}
-
-.error {
+.main-block p.error {
     font-size: 20px;
     padding-left: 20px;
-    margin-top: -47px;
-    margin-bottom: 40px;
+    margin-top: -45px;
+    margin-bottom: 20px;
     color: #424242;
 }
 
 .search-area {
     padding: 10px;
+    text-align: center;
 }
 
-.search-area input[type="text"],
+.search-area input[type="search"],
 .search-area input[type="submit"] {
-    width: 520px;
+    width: 668px;
     font-weight: 300;
     font-size: 14px;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
-    padding: 12px 20px;
+    padding: 15px 20px;
+}
+
+.search-area input[type="submit"] {
+    width: 130px;
+    /*font-weight: 300;
+    font-size: 14px;*/
+    text-transform: uppercase;
+    color: #fff8ef;
+    background-color: #ff9211;
+    /*border: 1px solid #dbdbdb;*/
+    /*box-sizing: border-box;
+    padding: 15px 20px;*/
+    cursor: pointer;
+    margin-left: -134px;
+}
+
+.main-block h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #424242;
+    letter-spacing: 1px;
+}
+
+.main-block p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: #424242;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #424242;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+
+/*---------- Стили Footer ----------*/
+.main-footer {
+    margin-top: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.social-icons li {
+    margin: 10px;
+}
+
+.copyright p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #999;
+    text-align: center;
+}
+
+.copyright a {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ff9311;
+}
+
+.copyright p span {
+    font-weight: 400;
+    color: #ff9311;
 }
