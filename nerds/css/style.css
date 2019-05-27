@@ -1,0 +1,48 @@
+﻿/* font-family: 'Roboto', 'Arial', sans-serif; */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/web/roboto.woff') format('woff'),
+    url('../fonts/web/roboto.woff2')  format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/web/robotobold.woff') format('woff'),
+    url('../fonts/web/robotobold.woff2')  format('woff2');
+    font-weight: bold; /* 700 */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/web/robotomedium.woff') format('woff'),
+    url('../fonts/web/robotomedium.woff2')  format('woff2');
+    font-weight: medium; /* 500 */
+    font-style: normal;
+}
+
+
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+/*---------- Стили Header ----------*/
+
+.main-header {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*---------- Стили основного блока ----------*/
+
+
+
+/*---------- Стили Footer ----------*/
