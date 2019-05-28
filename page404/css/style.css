@@ -41,7 +41,7 @@
     font-style: normal;
 }
 
-/* font-family: 'IskoolaPota', "Arial", serif; */
+/* font-family: 'IskoolaPota', serif; */
 @font-face {
     font-family: 'IskoolaPota';
     src: url('../fonts/web/IskoolaPota.eot?#iefix') format('embedded-opentype'),
@@ -126,7 +126,7 @@ body {
 
 .search-area input[type="search"],
 .search-area input[type="submit"] {
-    width: 668px;
+    width: 538px; /*668px;*/
     font-weight: 300;
     font-size: 14px;
     border: 1px solid #dbdbdb;
@@ -145,7 +145,7 @@ body {
     /*box-sizing: border-box;
     padding: 15px 20px;*/
     cursor: pointer;
-    margin-left: -134px;
+    margin-left: -5px; /*-134px*/
 }
 
 .main-block h2 {
