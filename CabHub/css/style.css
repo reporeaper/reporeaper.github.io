@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: 900;
 }
-/* ---------- font-family: 'Bebas Neue', sans-serif; ----------*/
+/* ---------- font-family: 'BebasNeue', sans-serif; ----------*/
 @font-face {
     font-family: "bebasneue";
     src: url("../fonts/web/bebasneue/bebasneueregular.woff") format("woff"),
@@ -55,7 +55,7 @@ html {
 body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
-	background-color: #fff;
+	background-color: #ffc61a;
 	min-width: 900px;
 	max-width: 1600px;
 	margin: 0 auto;
@@ -64,6 +64,15 @@ body {
 p {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
+}
+
+.tariffs,
+.about-app {
+	background-color: #fff;
+}
+
+.container {
+	margin: 0 200px;
 }
 
 /* ---------- Шапка ---------- */
@@ -192,3 +201,56 @@ p.link a:focus {
 }
 
 /* ---------- Второй блок ----------*/
+.about-and-booking-form {
+	background-color: #ffc61a;
+	background-size: cover;
+}
+
+.about-and-booking-form .container {
+	display: flex;
+}
+
+.about {
+	max-width: 50%;
+}
+
+.about h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 16px;
+}
+
+.about h2 {
+	font-size: 50px;
+	/*line-height: 38px;*/
+	text-transform: uppercase;
+	color: #101010;
+	margin-top: 0;
+}
+
+.about p {
+	font-size: 18px;
+	color: #010101;
+	padding-right: 40px;
+}
+
+.about a {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 9px 30px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 10px;
+}
+
+.about a:hover,
+.about a:focus {
+	background-color: gray;
+	color: #ffc61a;
+	transition: all 0.2s linear;
+}
