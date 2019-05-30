@@ -1,74 +1,194 @@
-﻿/* ------- Класс для скрытия элементов разметки ----- */
-
-	.visually-hidden {
-		position: absolute;
-		clip: rect(0 0 0 0);
-		width: 1px;
-		height: 1px;
-		margin: -1px;
- 	}
- 
-/* ------- /Класс для скрытия элементов разметки ----- */
- 
-/* ---------- Основная разметка ---------- */
-
-	.container {
-		border: 2px solid red;
-		margin-left: 2.3%;
-		margin-right: 2.3%;
-	}
-
-	html {
-		box-sizing: border-box;
-	}
-
-	body {
-		font-family: "Roboto", "Arial" serif;
-		background-color: #839d8f;
-		min-width: 900px;
-		max-width: 1200px;
-		margin: 0 auto;
-		border: 1px solid black;
-	}
-
-	header,
-	nav {
-		display: flex;
-	}
-
-	nav {
-		align-items: center;
-	}
-
-	.slider-img {
-		z-index: -1;
-		margin-top: -64px;
-	}
-
-
-
-
-
+﻿/* ---------- Подключаем шрифты ---------- */
+/* ---------- font-family: 'Lato', sans-serif; ----------*/
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/web/roboto.woff") format("woff"),
-    url("../fonts/web/roboto.woff2") format("woff2");
+    font-family: "Lato";
+	src: url('../fonts/web/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/web/Lato/Lato-Regular.woff') format('woff'),
+    url('../fonts/web/Lato/Lato-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/web/robotobold.woff") format("woff"),
-    url("../fonts/web/robotobold.woff2") format("woff2");
+    font-family: "Lato";
+	src: url('../fonts/web/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/web/Lato/Lato-Black.woff') format('woff'),
+    url('../fonts/web/Lato/Lato-Black.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 900;
+}
+/* ---------- font-family: 'Bebas Neue', sans-serif; ----------*/
+@font-face {
+    font-family: "bebasneue";
+    src: url("../fonts/web/bebasneue/bebasneueregular.woff") format("woff"),
+    url("../fonts/web/bebasneue/bebasneueregular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "bebasneue";
+    src: url("../fonts/web/bebasneue/bebasneuebold.woff") format("woff"),
+    url("../fonts/web/bebasneue/bebasneuebold.woff2") format("woff2");
     font-style: normal;
     font-weight: bold;
 }
 
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/web/robotomedium.woff") format("woff"),
-    url("../fonts/web/robotomedium.woff2") format("woff2");
-    font-style: normal;
-    font-weight: medium;
+
+
+
+/* ------- Класс для скрытия элементов разметки ----- */
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
 }
+
+/* ---------- Основная разметка ---------- */
+html {
+	/*box-sizing: border-box;*/
+	background-color: #464646;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	background-color: #fff;
+	min-width: 900px;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+/* ---------- Шапка ---------- */
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 80px;
+	/*margin-top: 40px;*/
+}
+
+.main-header-logo {
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+.main-header-logo p {
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #fff;
+	margin-top: 0;
+}
+
+.main-header-logo span {
+	text-transform: uppercase;
+	color: #daa505;
+}
+
+.main-header-logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus {
+	color: #daa505;
+	transition: all 0.2s linear;
+}
+
+.main-navigation {
+	margin-top: 40px;
+}
+
+.site-navigation {
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+}
+
+.site-navigation li {
+	margin: 0 20px;
+}
+
+.site-navigation li:last-child {
+	margin-right: 100px;
+}
+
+.site-navigation li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #fff;
+}
+
+.site-navigation li a:hover,
+.site-navigation li a:focus {
+	background-color: #ffc61a;
+	border-radius: 24px;
+	padding: 9px 24px;
+	color: #010101;
+	transition: all 0.2s linear;
+}
+
+/* ---------- Первый блок ----------*/
+.wrapper {
+	background-image: url('../img/header-bg.webp');
+	background-repeat: no-repeat;
+}
+
+.phone-number {
+	font-size: 72px;
+	font-weight: 900;
+	text-align: center;
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.main-hero h1 {
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffc61a;
+	margin-bottom: 10px;
+}
+
+.main-hero p.link {
+	font-size: 20px;
+	text-align: center;
+}
+
+p.link a {
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 16px;
+	color: #fff;
+}
+
+p.link a:hover,
+p.link a:focus {
+	color: #ffc61a;
+	transition: all 0.2s linear;
+}
+
+.main-hero img {
+	max-width: 100%;
+}
+
+.main-taxi {
+	margin-top: 60px;
+}
+
+.main-cab {
+	display: block;
+	margin: auto;
+}
+
+/* ---------- Второй блок ----------*/
