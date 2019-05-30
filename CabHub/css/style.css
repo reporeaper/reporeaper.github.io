@@ -89,6 +89,7 @@ p {
 }
 
 .main-header-logo p {
+	font-weight: 900;
 	font-size: 15px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -97,6 +98,7 @@ p {
 }
 
 .main-header-logo span {
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: #daa505;
 }
@@ -212,6 +214,7 @@ p.link a:focus {
 
 .about {
 	max-width: 50%;
+	margin-bottom: 60px;
 }
 
 .about h1 {
@@ -233,6 +236,7 @@ p.link a:focus {
 	font-size: 18px;
 	color: #010101;
 	padding-right: 40px;
+	padding-bottom: 40px;
 }
 
 .about a {
@@ -250,6 +254,64 @@ p.link a:focus {
 
 .about a:hover,
 .about a:focus {
+	background-color: gray;
+	color: #ffc61a;
+	transition: all 0.2s linear;
+}
+
+.booking-form {
+	margin-left: 130px;
+}
+
+.booking-form form {
+	background-color: #fff;
+}
+
+.booking-form h1 {
+	font-size: 34px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+	padding:25px 0 25px 38px;
+	margin-bottom: 0;
+}
+
+.booking-form h1 span {
+	color: #ffc61a;
+}
+
+.booking-form fieldset {
+	border: none;
+}
+
+input[type="text"],
+input[type="tel"] {
+	max-width: 140px;
+	border: none;
+	border-bottom: 2px solid #e4e4e4;
+	padding: 12px;
+	margin: 10px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	border: none;
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 9px 30px;
+	margin-top: 32px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
 	background-color: gray;
 	color: #ffc61a;
 	transition: all 0.2s linear;
