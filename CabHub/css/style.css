@@ -149,6 +149,13 @@ p {
 	transition: all 0.2s linear;
 }
 
+.site-navigation li a.active {
+	background-color: #ffc61a;
+	border-radius: 24px;
+	padding: 9px 24px;
+	color: #010101;
+}
+
 /* ---------- Первый блок ----------*/
 .wrapper {
 	background-image: url('../img/header-bg.webp');
