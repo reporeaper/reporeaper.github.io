@@ -342,3 +342,92 @@ input[type="tel"]::placeholder {
 .vehicle {
 	width: 100%;
 }
+
+/* ---------- Третий блок ----------*/
+.tariffs h1 {
+	font-size: 44px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	padding-top: 60px;
+}
+
+.tariffs h1 span {
+	font-size: 35px;
+	color: #ffc61a;
+}
+
+.tariffs img {
+	max-width: 100%;
+}
+
+.choose-tariff {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0;
+	list-style: none;
+}
+
+.choose-tariff li {
+	width: 30%;
+	margin-right: 40px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.choose-tariff li:last-child {
+	margin-right: 0;
+}
+
+.yellow-cab {
+	margin-bottom: -120px;
+}
+
+.tariff-wrapper {
+	background-color: #f5f3f1;
+	padding-bottom: 40px;
+}
+
+.tariff-wrapper h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-top: 120px;
+	color: #000;
+}
+
+.tariff-wrapper p {
+	font-size: 18px;
+	padding: 0 20px 24px;
+	color: #101010;
+}
+
+.tariff-wrapper p.price {
+	font-size: 44px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #ffc61a;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.tariff-wrapper a {
+	font-family: 'BebasNeue', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 9px 30px;
+	color: #000;
+	background-color: #ffc519;
+	border-radius: 10px;
+}
+
+.tariff-wrapper a:hover,
+.tariff-wrapper a:focus {
+	background-color: #000;
+	color: #fff;
+	transition: all 0.2s linear;
+}
+
+/* ---------- Четвертый блок ----------*/
