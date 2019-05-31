@@ -287,7 +287,7 @@ p.link a:focus {
 
 input[type="text"],
 input[type="tel"] {
-	max-width: 140px;
+	/*max-width: 140px;*/
 	border: none;
 	border-bottom: 2px solid #e4e4e4;
 	padding: 12px;
@@ -316,4 +316,22 @@ input[type="submit"]:focus {
 	background-color: gray;
 	color: #ffc61a;
 	transition: all 0.2s linear;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder {
+	font-weight: 900;
+	color: #4b4b4b;
+}
+
+.black-placeholder::placeholder {
+	color: #000 !important;
+}
+
+.full-width {
+	display: flex;
+}
+
+.vehicle {
+	width: 100%;
 }
