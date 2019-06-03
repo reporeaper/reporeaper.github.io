@@ -1,5 +1,5 @@
-﻿/* ---------- Подключаем шрифты ---------- */
-/* ---------- font-family: 'Lato', sans-serif; ----------*/
+﻿/*---------- Подключаем шрифты ----------*/
+/*---------- font-family: 'Lato', sans-serif; ----------*/
 @font-face {
     font-family: "Lato";
 	src: url('../fonts/web/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
@@ -17,7 +17,7 @@
     font-style: normal;
     font-weight: 900;
 }
-/* ---------- font-family: 'BebasNeue', sans-serif; ----------*/
+/*---------- font-family: 'BebasNeue', sans-serif; ----------*/
 @font-face {
     font-family: "bebasneue";
     src: url("../fonts/web/bebasneue/bebasneueregular.woff") format("woff"),
@@ -37,7 +37,7 @@
 
 
 
-/* ------- Класс для скрытия элементов разметки ----- */
+/*------- Класс для скрытия элементов разметки -----*/
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -46,7 +46,7 @@
 	margin: -1px;
 }
 
-/* ---------- Основная разметка ---------- */
+/*---------- Основная разметка ----------*/
 html {
 	box-sizing: border-box;
 	background-color: #464646;
@@ -56,7 +56,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	background-color: #ffc61a;
-	min-width: 900px;
+	min-width: 1050px;
 	max-width: 1600px;
 	margin: 0 auto;
 	box-shadow: 0 0 40px #daa505;
@@ -76,7 +76,7 @@ p {
 	margin: 0 200px;
 }
 
-/* ---------- Шапка ---------- */
+/*---------- Шапка ----------*/
 .main-header {
 	display: flex;
 	justify-content: space-between;
@@ -156,7 +156,7 @@ p {
 	color: #010101;
 }
 
-/* ---------- Первый блок ----------*/
+/*---------- Первый блок ----------*/
 .wrapper {
 	background-image: url('../img/header-bg.webp');
 	background-repeat: no-repeat;
@@ -210,7 +210,7 @@ p.link a:focus {
 	margin: auto;
 }
 
-/* ---------- Второй блок ----------*/
+/*---------- Второй блок ----------*/
 .about-and-booking-form {
 	background-color: #ffc61a;
 	background-size: cover;
@@ -343,7 +343,7 @@ input[type="tel"]::placeholder {
 	width: 100%;
 }
 
-/* ---------- Третий блок ----------*/
+/*---------- Третий блок ----------*/
 .tariffs h1 {
 	font-size: 44px;
 	text-transform: uppercase;
@@ -430,7 +430,7 @@ input[type="tel"]::placeholder {
 	transition: all 0.2s linear;
 }
 
-/* ---------- Четвертый блок ----------*/
+/*---------- Четвертый блок ----------*/
 .advantages {
 	background-image: url('../img/choose-us-bg-1.webp');
 	background-repeat: no-repeat;
@@ -456,6 +456,7 @@ input[type="tel"]::placeholder {
 .features {
 	list-style: none;
 	display: flex;
+	padding-left: 0;
 }
 
 .features h3 {
@@ -467,6 +468,11 @@ input[type="tel"]::placeholder {
 .features p {
 	font-size: 18px;
 	color: #fff;
+}
+
+.features li {
+	width: 80%;
+	padding-bottom: 40px;
 }
 
 .circle {
@@ -485,7 +491,7 @@ input[type="tel"]::placeholder {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 60px;
+	margin-bottom: 20px;
 }
 /*
 .li-flex-elem {
@@ -519,4 +525,213 @@ input[type="tel"]::placeholder {
 	padding-bottom: 70px;
 }
 
-/* ---------- Пятый блок ----------*/
+/*---------- Пятый блок ----------*/
+.about-app {
+	margin-top: -30px;
+	margin-bottom: -58px;
+}
+
+.about-app h1 {
+	font-size: 44px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	padding-top: 60px;
+}
+
+.about-app h1 span {
+	font-size: 35px;
+	color: #ffc61a;
+}
+
+.about-app h3 {
+	font-size: 25px;
+	color: #000;
+	padding-top: 40px;
+}
+
+.about-app p {
+	font-size: 18px;
+	color: #101010;
+}
+
+.app-description {
+	width: 45%;
+}
+
+.app-description p {
+	padding-right: 100px;
+}
+
+.about-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.app-download {
+	margin-top: 30px;
+}
+
+.stores {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 0;
+}
+
+.stores-bg {
+	padding: 9px 24px;
+	background-color: #000;
+	border-radius: 35px;
+	margin-right: 20px;
+}
+
+.app-mockup {
+	justify-content: flex-end;
+	margin-top: -180px;
+}
+
+/*---------- Шестой блок ----------*/
+.testimonials {
+	background-image: url('../img/testimonials-bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.testimonials h1 {
+	font-size: 44px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	padding-top: 80px;
+	margin-bottom: 100px;
+}
+
+.testimonials h1 span {
+	font-size: 35px;
+	color: #ffc61a;
+}
+
+.testimonials p {
+	font-size: 18px;
+	color: #fff;
+	margin-top: 0;
+}
+
+.testimonials b {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #ffc61a;
+}
+
+.feedback {
+	display: flex;
+	padding-bottom: 100px;
+}
+
+.feedback-frame {
+	background-color: #000;
+	border-radius: 40px;
+	padding: 40px 70px 30px 50px;
+}
+
+.feedback-frame:first-child {
+	margin-right: 30px;
+}
+
+.feedback-frame-person>p {
+	text-transform: uppercase;
+}
+
+.feedback-frame-person img {
+	float: left;
+	margin-right: 20px;
+}
+
+/*---------- Седьмой блок ----------*/
+.cta h2 {
+	font-size: 35px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 60px;
+}
+
+.cta p {
+	color: #000;
+	padding-bottom: 70px;
+}
+
+/*---------- Footer ----------*/
+footer {
+	background-image: url('../img/footer-bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-footer article {
+	
+}
+
+.social,
+.users,
+.contact-us {
+	list-style: none;
+}
+
+.main-footer article h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	border-bottom: 8px solid #ffc61a;
+}
+
+.main-footer article p {
+	font-size: 18px;
+	color: #fff;
+}
+
+.users a {
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ffc61a;
+}
+
+.users a:hover,
+.users a:focus {
+	color: #fff;
+}
+
+.contact-us a {
+	font-size: 20px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #fff;
+}
+
+.contact-us a:hover,
+.contact-us a:focus {
+	color: #ffc61a;
+}
+
+.bottom-info {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-info p {
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.bottom-info a {
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.bottom-info a:hover,
+.bottom-info a:focus {
+	color: #ffc61a;
+}
