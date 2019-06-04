@@ -528,7 +528,7 @@ input[type="tel"]::placeholder {
 /*---------- Пятый блок ----------*/
 .about-app {
 	margin-top: -30px;
-	margin-bottom: -58px;
+	margin-bottom: -66px;
 }
 
 .about-app h1 {
@@ -653,7 +653,7 @@ input[type="tel"]::placeholder {
 	font-size: 35px;
 	text-transform: uppercase;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 .cta p {
@@ -668,26 +668,61 @@ footer {
 	background-size: cover;
 }
 
-.main-footer article {
-	
-}
-
+.main-footer-list,
 .social,
 .users,
 .contact-us {
 	list-style: none;
+	padding-left: 0;
 }
 
-.main-footer article h2 {
+.main-footer-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-footer-list>li {
+	max-width: 350px;
+	margin-right: 80px;
+}
+
+.main-footer-list>li:last-child {
+	margin-right: 0;
+}
+
+.main-footer-list h2 {
 	font-size: 25px;
 	text-transform: uppercase;
 	color: #fff;
 	border-bottom: 8px solid #ffc61a;
+	padding-top: 40px;
+	padding-bottom: 25px;
 }
 
-.main-footer article p {
+.main-footer-list p {
 	font-size: 18px;
 	color: #fff;
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-bottom: 18px;
+}
+
+.social {
+	display: flex;
+}
+
+.social>li {
+	margin-right: 20px;
+}
+
+.users>li a {
+	padding-right: 20px;
+}
+
+.users-table {
+	border: 1px solid yellow;
+	width: 200px;
+	border-collapse: collapse;
 }
 
 .users a {
