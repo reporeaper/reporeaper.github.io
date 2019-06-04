@@ -714,26 +714,26 @@ footer {
 .social>li {
 	margin-right: 20px;
 }
-
+/*
 .users>li a {
 	padding-right: 20px;
 }
-
+*/
 .users-table {
-	border: 1px solid yellow;
+	/*border: 1px solid yellow;*/
 	width: 200px;
 	border-collapse: collapse;
 }
 
-.users a {
+.users-table a {
 	font-size: 20px;
 	font-weight: 400;
 	text-decoration: none;
 	color: #ffc61a;
 }
 
-.users a:hover,
-.users a:focus {
+.users-table a:hover,
+.users-table a:focus {
 	color: #fff;
 }
 
