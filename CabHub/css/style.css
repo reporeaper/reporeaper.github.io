@@ -60,7 +60,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	background-color: #ffc61a;
-	min-width: 1050px;
+	/*min-width: 1050px;*/
 	max-width: 1600px;
 	margin: 0 auto;
 	box-shadow: 0 0 40px #daa505;
