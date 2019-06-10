@@ -7,6 +7,10 @@
 	margin: -1px;
 }
 
+#check-menu {
+	display: none;
+}
+
 /* ---------- Делаем элемент черно-белым ---------- */
 .grayscale { 
 	-webkit-filter: grayscale(100%);
@@ -970,7 +974,104 @@ footer {
 	}
 }
 
-@media screen and (max-width:480px) { 
+@media screen and (max-width:480px) {
+	/*----- Бургер-меню -----*/
+	.menu-wrapper {
+		width: 180px;
+		height: 40px;
+		background-color: #4b4b4b;
+		position: relative;
+		margin-top: 20px;
+		margin-right: 30px;
+	}
+
+	label {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		z-index: 2;
+	}
+
+	.burger-menu-line {
+		position: absolute;
+		top: 8px;
+		right: 0;
+		width: 40px;
+		height: 3px;
+		background-color: #626262;
+		transition: 0.5s all;
+	}
+
+	.dos,
+	.tres {
+		top: 18px;
+	}
+
+	.cuatro {
+		top: 28px;
+	}
+
+	.main-navigation {
+		display: block;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		transform: translateY(100%);
+		max-height: 0;
+		font-size: 0;
+		overflow: hidden;
+		transition: 0.5s all;
+	}
+
+	.main_menu {
+		display: block;
+	}
+
+	.main_menu li,
+	.main_menu li:last-child {
+		margin-right: 0;
+	}
+
+	.main_menu li a {
+		display: block;
+		width: 100%;
+		text-align: right;
+	}
+
+	.main_menu li a:hover,
+	.main_menu li a:focus {
+		background-color: transparent;
+		border-radius: 0;
+		padding: 0;
+		color: #bbb7db;
+		transition: all 0.2s linear;
+	}
+
+	#check-menu:checked ~ .main-navigation {
+		max-height: 400px;
+	}
+
+	#check-menu:checked ~ .uno {
+		display: none;
+	}
+
+	#check-menu:checked ~ .dos {
+		transform: rotate(45deg);
+	}
+
+	#check-menu:checked ~ .tres {
+		transform: rotate(-45deg);
+	}
+
+	#check-menu:checked ~ .cuatro {
+		display: none;
+	}
+
 	.header-container {
 		display: block;
 	}
