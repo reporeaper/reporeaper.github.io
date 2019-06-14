@@ -1351,7 +1351,7 @@ footer {
 	}
 
 	.main-footer-list>li {
-		max-width: 100% /*350px;*/
+		max-width: 100%; /*350px;*/
 		margin-right: 0;
 	}
 
