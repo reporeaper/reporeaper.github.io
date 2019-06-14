@@ -792,13 +792,19 @@ footer {
     font-size: 14px;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
 }
 
 .bottom-info a {
     font-size: 14px;
     text-decoration: none;
     color: #fff;
+}
+
+p.icons-copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 
 @media screen and (max-width:1000px) {
@@ -972,7 +978,7 @@ footer {
     }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     .menu-wrapper {
         width: 180px;
         height: 40px;
@@ -1089,7 +1095,9 @@ footer {
     #check-menu:checked~.cuatro {
         display: none;
     }
+}
 
+@media screen and (max-width:480px) {
     .main-header-logo {
         font-size: 30px;
         margin-top: 30px;
@@ -1270,12 +1278,11 @@ footer {
     }
 
     .app-mockup {
-        margin-top: 0;
+        display: none;
     }
 
-    .app-mockup img {
-        margin-top: 20px;
-        margin-bottom: -30px;
+    .app-download {
+        margin-bottom: 30px;
     }
 
     .testimonials {
@@ -1299,7 +1306,7 @@ footer {
     }
 
     .feedback-frame {
-        padding: 40px 70px 30px 50px;
+        padding: 20px 40px;
         margin: 0 0 20px;
     }
 
@@ -1351,5 +1358,124 @@ footer {
         margin-top: 5px;
         margin-left: 5px;
         margin-right: 15px;
+    }
+}
+
+@media screen and (max-width:320px) {
+	.main-header {
+        margin-left: 20px;
+    }
+
+    .main-header-logo {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .main-header-logo p {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .menu-wrapper {
+        width: 160px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .site-navigation li a {
+        font-size: 14px;
+    }
+
+    .main-hero h1,
+    .about h1,
+    .booking-form h1,
+    .tariffs h1,
+    .advantages h1,
+    .about-app h1,
+    .testimonials h1 {
+        font-size: 25px;
+    }
+
+    .testimonials h1 {
+        margin-bottom: 30px;
+    }
+
+    .tariffs h1 span,
+    .about-app h1 span,
+    .advantages h1 span,
+    .testimonials h1 span {
+        font-size: 20px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .tariff-wrapper h2 {
+        font-size: 26px;
+        padding-top: 80px;
+    }
+
+    .features h3,
+    .about-app h3 {
+        font-size: 18px;
+    }
+
+    .about p,
+    .features p,
+    .tariff-wrapper p,
+    .about-app p,
+    .testimonials p,
+    .main-footer-list p {
+        font-size: 14px;
+    }
+
+    .tariff-wrapper p {
+        padding: 0 20px 0;
+    }
+
+    .tariff-wrapper p.price {
+        font-size: 28px;
+    }
+
+    p.phone-number {
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    .main-hero p.link {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    p.link a {
+        letter-spacing: 8px;
+    }
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .app-download {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .stores {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stores li:first-child {
+        margin-bottom: 16px;
+    }
+
+    .feedback {
+        padding-bottom: 30px;
+    }
+
+    p.icons-copyright {
+        padding: 0 10px 10px;
     }
 }
