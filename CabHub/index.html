@@ -13,7 +13,6 @@
 	            <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
 	            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-
     </head>
     <body>
         <main>
@@ -33,11 +32,11 @@
                 <nav class="main-navigation">
                     <ul class="site-navigation">
                         <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Features</a></li>
+                        <li><a class="scrollto" href="#about">About</a></li>
+                        <li><a class="scrollto" href="#features">Features</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Order Now</a></li>
-                        <li><a href="#">Contacts</a></li>
+                        <li><a class="scrollto" href="#order">Order Now</a></li>
+                        <li><a class="scrollto" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -54,7 +53,7 @@
         </section>
         </div>
 
-        <section class="about-and-booking-form">
+        <section id="about" class="about-and-booking-form">
             <div class="container">
             <h2 class="visually-hidden">About and booking form</h2>
             <div class="about">
@@ -136,7 +135,7 @@
 
         <section class="advantages">
             <div class="container">
-            <h2 class="visually-hidden">Our Features</h2>
+            <h2 id="features" class="visually-hidden">Our Features</h2>
             <h1><span>We do best</span><br> Than You Wish</h1>
             <ul class="features">
                 <div class="li-wrapper">
@@ -273,7 +272,7 @@
         </section>
 
         <section class="cta">
-            <h2 class="visually-hidden">Call us</h2>
+            <h2 id="order" class="visually-hidden">Call us</h2>
             <h2>We are Ready to Take Your Call 24 Hours, 7 Days!</h2>
             <p class="phone-number">+123 4567 8900</p>
         </section>
@@ -328,7 +327,7 @@
                 </ul>-->
             </li>
             <li>
-                <h2>Contact</h2>
+                <h2 id="contacts">Contact</h2>
                 <ul class="contact-us">
                     <li>
                         <div class="contact-icon">
@@ -369,5 +368,7 @@
                 </p>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/anchor.js"></script>
     </body>
 </html>
