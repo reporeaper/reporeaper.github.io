@@ -68,6 +68,16 @@ p {
     font-weight: 400;
 }
 
+#toTop {
+    position: fixed;
+	right: 180px;
+    bottom: 35px;
+}
+
+.up-arrow {
+    cursor: pointer;
+}
+
 .about-app,
 .booking-form form,
 .tariffs {
