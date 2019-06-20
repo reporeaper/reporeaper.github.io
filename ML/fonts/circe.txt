@@ -1,0 +1,52 @@
+@font-face {
+font-family: 'Circe Light';
+src: url('Circe-Light.eot');
+src: url('Circe-Light.eot?#iefix') format('embedded-opentype'),
+url('Circe-Light.woff') format('woff'),
+url('Circe-Light.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.box-name {font-family: 'Circe Light';}
+
+
+
+@font-face {
+font-family: 'Circe Regular';
+src: url('Circe-Regular.eot');
+src: url('Circe-Regular.eot?#iefix') format('embedded-opentype'),
+url('Circe-Regular.woff') format('woff'),
+url('Circe-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.box-name {font-family: 'Circe Regular';}
+
+
+
+@font-face {
+font-family: 'Circe Bold';
+src: url('Circe-Bold.eot');
+src: url('Circe-Bold.eot?#iefix') format('embedded-opentype'),
+url('Circe-Bold.woff') format('woff'),
+url('Circe-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.box-name {font-family: 'Circe Bold';}
+
+
+@font-face {
+font-family: 'Roboto Medium';
+src: url('Roboto-Medium.eot');
+src: url('Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+url('Roboto-Medium.woff') format('woff'),
+url('Roboto-Medium.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.box-name {font-family: 'Roboto Medium';}
