@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/st1yle.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title>Digital-designer & illustrator</title>
@@ -20,7 +20,7 @@
             <div class="wrapper">
                 <header class="main-header">
                     <div class="main-header-logo">
-                        <img src="img/logo.png">
+                        <img src="img/logo.svg">
                     </div>
                     <div class="menu-wrapper">
                         <input type="checkbox" id="check-menu">
@@ -45,7 +45,7 @@
                     <h1>Mashilova Lyubov</h1>
                     <p>Digital-designer & illustrator</p>
                     <div class="scroll-down">
-                        <img src="img/mouse-2.svg">
+                        <img src="img/scroll-down-1.png" width="40" height="40">
                     </div>
                 </section>
             </div>
@@ -62,12 +62,12 @@
                 </ul>
                 <div class="myWork-flexContainer">
                     <ul class="myWork-grid-elements">
-                        <li><a href="#"><img src="img/work-1.jpg" alt="Пример работы"></a></li>
-                        <li><a href="#"><img src="img/work-2.jpg" alt="Пример работы"></a></li>
-                        <li><a href="#"><img src="img/work-3.jpg" alt="Пример работы"></a></li>
-                        <li><a href="#"><img src="img/work-4.jpg" alt="Пример работы"></a></li>
-                        <li><a href="#"><img src="img/work-5.jpg" alt="Пример работы"></a></li>
-                        <li><a href="#"><img src="img/work-6.jpg" alt="Пример работы"></a></li>
+                        <li><img src="img/work-1.jpg" alt="Пример работы"></li>
+                        <li><img src="img/work-2.jpg" alt="Пример работы"></li>
+                        <li><img src="img/work-3.jpg" alt="Пример работы"></li>
+                        <li><img src="img/work-4.jpg" alt="Пример работы"></li>
+                        <li><img src="img/work-5.jpg" alt="Пример работы"></li>
+                        <li><img src="img/work-6.jpg" alt="Пример работы"></li>
                     </ul>
                 </div>
             </section>
@@ -98,11 +98,15 @@
                 <h2 class="visually-hidden">Обратная связь</h2>
                 <h2>Обратная связь</h2>
                     <form action="https://echo.htmlacademy.ru" method="POST">
-                        <input type="text" name="Name" placeholder="Имя">
-                        <input type="tel" name="Phone" placeholder="Телефон">
-                        <input type="email" name="Email" placeholder="E-mail">
-                        <input type="text" placeholder="Сообщение">
-                        <input type="submit" value="Отправить">
+                        <fieldset>
+                            <input type="text" name="Name" placeholder="Имя">
+                            <input type="tel" name="Phone" placeholder="Телефон">
+                            <input type="email" name="Email" placeholder="E-mail">
+                            <div class="text-area"> <!-- Обертка для формы ввода пользовательского текста -->
+                                <textarea cols="" rows="" placeholder="Сообщение"></textarea>
+                            </div>
+                            <input type="submit" value="Отправить">
+                        </fieldset>
                     </form>
                 </div>
             </section>
@@ -115,28 +119,37 @@
                     <li>
                         <ul class="contact-us">
                             <li>
-                            
-                            </li>
-                            <li>
-                            
-                            </li>
-                            <li>
-                            
-                            </li>
-                            <li>
-                            
+                                <table class="users-table">
+                                    <tr>
+                                        <td>
+                                            <img src="img/location-pin.svg">
+                                        </td>
+                                        <td>
+                                            <p>Санкт-Петербург</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="img/copyright.svg">
+                                        </td>
+                                        <td>
+                                            <p>2018.Mashilova</p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </li>
                         </ul>
                     </li>
                     <li>
+                        <img src="img/logo.svg">
+                    </li>
+                    <li>
+                        <p>+7 (921) 773-84-77</p>
                         <ul class="social">
-                            <li><a href="#" target="_blank" title="Follow us on Facebook"><img src="img/fb-icon.svg"></a></li>
-                            <li><a href="#" target="_blank" title="Follow us on Google Plus"><img src="img/google-plus.svg"></a></li>
-                            <li><a href="#" target="_blank" title="Follow us on Twitter"><img src="img/twitter-logo.svg"></a></li>
+                            <li><a href="https://www.behance.net/" target="_blank" title="Я на Behance"><img src="img/behance-white.svg"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" title="Я в Instagramm"><img src="img/instagram.svg"></a></li>
+                            <li><a href="#" target="_blank" title="Я в Skype"><img src="img/skype.svg"></a></li>
                         </ul>
-                    </li>
-                    <li>
-            
                     </li>
                 </ul>
             </div>
@@ -148,3 +161,12 @@
         <script src="js/anchor.js"></script>
     </body>
 </html>
+<!--
+    <div class="contact-icon">
+        <img src="img/pin.svg">
+    </div>
+    <p>Санкт-Петербург</p>
+    </li>
+    <li>
+        <p>&copy;2018.Mashilova</p>
+-->

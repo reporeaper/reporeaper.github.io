@@ -1,37 +1,38 @@
 ﻿/*---------- Подключаем шрифты ----------*/
-/*---------- font-family: 'Lato', sans-serif; ----------*/
+/*---------- font-family: 'Circe Light', sans-serif; ----------*/
 @font-face {
-    font-family: "Lato";
-	src: url('../fonts/web/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/web/Lato/Lato-Regular.woff') format('woff'),
-    url('../fonts/web/Lato/Lato-Regular.woff2') format('woff2');
+    font-family: 'Circe Light';
+	src: url('../fonts/web/Circe-Light.woff') format('woff'),
+    url('../fonts/web/Circe-Light.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 
+/*---------- font-family: 'Circe Regular', sans-serif; ----------*/
 @font-face {
-    font-family: "Lato";
-	src: url('../fonts/web/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/web/Lato/Lato-Black.woff') format('woff'),
-    url('../fonts/web/Lato/Lato-Black.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 900;
-}
-/*---------- font-family: 'BebasNeue', sans-serif; ----------*/
-@font-face {
-    font-family: "bebasneue";
-    src: url("../fonts/web/bebasneue/bebasneueregular.woff") format("woff"),
-    url("../fonts/web/bebasneue/bebasneueregular.woff2") format("woff2");
+    font-family: 'Circe Regular';
+	src: url('../fonts/web/Circe-Regular.woff') format('woff'),
+    url('../fonts/web/Circe-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 
+/*---------- font-family: 'Circe Bold', sans-serif; ----------*/
 @font-face {
-    font-family: "bebasneue";
-    src: url("../fonts/web/bebasneue/bebasneuebold.woff") format("woff"),
-    url("../fonts/web/bebasneue/bebasneuebold.woff2") format("woff2");
+    font-family: 'Circe Bold';
+    src: url('../fonts/web/Circe-Bold.woff') format('woff'),
+    url('../fonts/web/Circe-Bold.woff2') format('woff2');
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+/*---------- font-family: 'Proxima Nova Bold', sans-serif; ----------*/
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/web/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/web/ProximaNova-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
 }
 
 /*------- Класс для скрытия элементов разметки -----*/
@@ -53,20 +54,23 @@ html {
 }
 
 body {
-	font-family: ;
-	font-weight: ;
+	font-family: 'Circe Regular', sans-serif;
+	font-weight: normal;
 	background-color: #fff;
-	max-width: ;
+	max-width: 1400px;
 	margin: 0 auto;
+	/*border: 1px solid #000;*/
 }
 
-p {
-	font-family: ;
-	font-weight: ;
+h1, h2 {
+	font-family: 'Circe Bold', sans-serif;
+	font-weight: normal;
 }
 
-.container {
-	margin: ;
+.container,
+.wrapper {
+	margin: 0 110px;
+	/*border: 1px solid #000;*/
 }
 
 /*---------- Шапка ----------*/
