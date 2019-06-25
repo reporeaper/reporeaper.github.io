@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/st1yle.css">
+        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Webim Test Case</title>
+
+        <!--[if lt IE 9]>
+	            <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <header class="main-header">
+                    <div class="main-header-logo">
+                        <a href="https://webim.ru/" target="_blank"><img src="images/logo_header.svg" width="110" height="30" alt="Логотип Webim"></a>
+                        <p>Сервис онлайн-консультирования <span>чат на сайт + 10 каналов</span></p>
+                    </div>
+                    <!--<div class="menu-wrapper">
+                        <input type="checkbox" id="check-menu">
+                        <label for="check-menu"></label>
+                        <div class="burger-menu-line uno"></div>
+                        <div class="burger-menu-line dos"></div>
+                        <div class="burger-menu-line tres"></div>
+                        <div class="burger-menu-line cuatro"></div>-->
+                        <nav class="main-navigation">
+                            <ul class="site-navigation">
+                                <li><a class="scrollto" href="#installation">установка</a></li>
+                                <li><a class="scrollto" href="#possibilities">возможности</a></li>
+                                <li><a class="scrollto" href="#price">стоимость</a></li>
+                                <li><input type="button" class="btn reg-btn" value="РЕГИСТРАЦИЯ"></li>
+                            </ul>
+                        </nav>
+                    <!--</div>-->
+                </header>
+
+                <section class="main-screen">
+                    <h2 class="visually-hidden">Главный экран</h2>
+                    <div class="container">
+                        <div class="start-processing">
+                            <h1>Принимайте обращения 
+                                клиентов из разных каналов
+                                в одном сервисе</h1>
+                                <input type="button" class="btn start-btn" value="Начать обрабатывать заявки с Webim">
+                        </div>
+                        <div class="figure">
+                            <img src="images/img_01_x2.png" width="610" height="608" alt="Мессенджеры">
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="" class="specification">
+                <h2 class="visually-hidden">Описание продукта</h2>
+                <div class="container">
+                    <h1>Гибкие настройки внешнего вида 
+                        и взаимодействия с клиентами</h1>
+                    <ol class="spec-description">
+                        <li><span>Форма обратной связи 
+                            и генератор лидов</span></li>
+                        <li><span>Настройка дизайна 
+                            кнопки</span></li>
+                        <li><span>Гибкая настройка 
+                            активных приглашений</span></li>
+                        <li><span>Передача данных
+                            и кликабельные ссылки
+                            в собщениях</span></li>
+                        <li><span>Редактирование
+                            и удаление отправленых 
+                            сообщений</span></li>
+                        <li><span>Шаблоны ответов 
+                            и проверка орфографии</span></li>
+                        <li><span>Отправка эмодзи 
+                            и оценка качества диалога</span></li>
+                        <li><span>Наблюдение за печатью 
+                            сообщения посетителем</span></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="" class="our-clients">
+                <h2 class="visually-hidden">Наши клиенты</h2>
+                <div class="container">
+                    <h2>Наши клиенты - это лидеры рынка</h2>
+                    <div class="carousel">
+                            <div><img src="images/logo_01.svg" width="170" height="50" alt="Тинькофф Банк"></div>
+                            <div><img src="images/logo_02.svg" width="170" height="50" alt="Райффайзен Банк"></div>
+                            <div><img src="images/logo_03.svg" width="170" height="50" alt="Комус"></div>
+                            <div><img src="images/logo_04-1.svg" width="170" height="50" alt="Bosch"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="" class="registration">
+                <h2 class="visually-hidden">Регистрация</h2>
+                <div class="container">
+                    <h1>Регистрация</h1>
+                    <form action="https://echo.htmlacademy.ru" method="POST">
+                        <input type="text" required name="Name" placeholder="Имя">
+                        <input type="tel" required name="Phone" placeholder="Телефон">
+                        <input type="email" required name="Email" placeholder="Email">
+                        <input type="password" required name="password" placeholder="Пароль">
+                        <input type="text" name="Name" placeholder="Сайт">
+                        <label>
+                            <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off">
+                            <span class="fa fa-square" aria-hidden="true"></span>
+                            <span class="fa fa-check-square" aria-hidden="true"></span>
+                        </label>
+                        <span>Регистрируясь в системе, я принимаю условия 
+                        <a href="#">Лицензионного cоглашения</a>, <a href="#">Политики конфиденциальности</a> 
+                        и даю Согласие <a href="#">на обработку персональных данных</a>.</span>
+                        <input type="submit" name="submit" class="btn submit-btn" disabled="" value="Зарегистрироваться">
+                    </form>
+                    <!-- код делает не активной кнопку отправить, пока не стоит галочка -->
+                    <script>
+                        function check() {
+                            var submit = document.getElementsByName('submit')[0];
+                            if (document.getElementById('politics').checked)
+                            submit.disabled = '';
+                            else
+                            submit.disabled = 'disabled';
+                        }
+                    </script>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <h2 class="visually-hidden">Подвал</h2>
+            <span>&copy; <a href="https://webim.ru/" target="_blank">Webim</a>, 2019</span>
+            <a href="#">Политика конфиденциальности</a>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </body>
+</html>
