@@ -77,7 +77,9 @@ h1, h2 {
 .wrapper {
 	background-image: url('../img/main-bg.jpg');
 	background-repeat: no-repeat;
-	/*background-size: 100%;*/
+	background-color: #383838;
+	height: 800px;
+	/*background-blend-mode: overlay; /* цвет поверх фонового изображения */
 }
 
 .main-header {
