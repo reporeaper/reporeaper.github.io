@@ -51,6 +51,7 @@
 /*---------- Основная разметка ----------*/
 html {
 	box-sizing: border-box;
+	background-color: rgb(66, 66, 66);
 }
 
 body {
@@ -67,13 +68,20 @@ h1, h2 {
 	font-weight: normal;
 }
 
-.container,
-.wrapper {
+.container {
 	margin: 0 110px;
 	/*border: 1px solid #000;*/
 }
 
-/*---------- Шапка ----------*/
+/*---------- Шапка и Первый блок ----------*/
+.wrapper {
+	background-image: url('../img/main-bg.jpg');
+	background-repeat: no-repeat;
+	background-color: #383838;
+	height: 800px;
+	/*background-blend-mode: overlay; /* цвет поверх фонового изображения */
+}
+
 .main-header {
 	
 }
@@ -126,12 +134,6 @@ h1, h2 {
 
 .site-navigation li a.active {
 	
-}
-
-/*---------- Первый блок ----------*/
-.wrapper {
-	background-image: url('../img/');
-	background-repeat: no-repeat;
 }
 
 /*---------- Второй блок ----------*/
