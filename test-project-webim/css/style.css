@@ -1,36 +1,26 @@
 ﻿/*---------- Подключаем шрифты ----------*/
-/*---------- font-family: 'Circe Light', sans-serif; ----------*/
+/*---------- font-family: 'Ubuntu', sans-serif; ----------*/
+
 @font-face {
-    font-family: 'Circe Light';
-	src: url('../fonts/web/Circe-Light.woff') format('woff'),
-    url('../fonts/web/Circe-Light.woff2') format('woff2');
+    font-family: 'Ubuntu';
+	src: url('../fonts/web/Ubuntu-Light.woff') format('woff'),
+    url('../fonts/web/Ubuntu-Light.woff2') format('woff2');
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
 }
 
-/*---------- font-family: 'Circe Regular', sans-serif; ----------*/
 @font-face {
-    font-family: 'Circe Regular';
-	src: url('../fonts/web/Circe-Regular.woff') format('woff'),
-    url('../fonts/web/Circe-Regular.woff2') format('woff2');
+    font-family: 'Ubuntu';
+	src: url('../fonts/web/Ubuntu-Bold.woff') format('woff'),
+    url('../fonts/web/Ubuntu-Bold.woff2') format('woff2');
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
 }
 
-/*---------- font-family: 'Circe Bold', sans-serif; ----------*/
 @font-face {
-    font-family: 'Circe Bold';
-    src: url('../fonts/web/Circe-Bold.woff') format('woff'),
-    url('../fonts/web/Circe-Bold.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
-}
-
-/*---------- font-family: 'Proxima Nova Bold', sans-serif; ----------*/
-@font-face {
-    font-family: 'Proxima Nova Bold';
-    src: url('../fonts/web/ProximaNova-Bold.woff') format('woff'),
-    url('../fonts/web/ProximaNova-Bold.woff2') format('woff2');
+    font-family: 'Ubuntu';
+    src: url('../fonts/web/Ubuntu-Regular.woff') format('woff'),
+    url('../fonts/web/Ubuntu-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
@@ -38,20 +28,19 @@
 /*---------- Основная разметка ----------*/
 html {
 	box-sizing: border-box;
-	background-color: rgb(66, 66, 66);
 }
 
 body {
-	font-family: 'Circe Regular', sans-serif;
-	font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
 	background-color: #fff;
 	max-width: 1400px;
 	margin: 0 auto;
 }
 
-h1, h2 {
-	font-family: 'Circe Bold', sans-serif;
-	font-weight: normal;
+h1 {
+	font-weight: 300;
 }
 
 .visually-hidden {
@@ -63,67 +52,11 @@ h1, h2 {
 }
 
 .container {
-	margin: 0 110px;
+	margin: 0 200px;
 }
 
 /*---------- Шапка и Первый блок ----------*/
-.wrapper {
-	
-}
 
-.main-header {
-	
-}
-
-.main-header-logo {
-	
-}
-
-.main-header-logo p {
-	
-}
-
-.main-header-logo span {
-	
-}
-
-.main-header-logo a {
-	
-}
-
-.main-header-logo a:hover,
-.main-header-logo a:focus {
-	
-}
-
-.main-navigation {
-	
-}
-
-.site-navigation {
-	
-}
-
-.site-navigation li {
-	
-}
-
-.site-navigation li:last-child {
-	
-}
-
-.site-navigation li a {
-	
-}
-
-.site-navigation li a:hover,
-.site-navigation li a:focus {
-	
-}
-
-.site-navigation li a.active {
-	
-}
 
 /*---------- Второй блок ----------*/
 
@@ -138,3 +71,31 @@ h1, h2 {
 footer {
 	
 }
+
+
+
+/*
+@font-face {
+    font-family: 'Ubuntu Light';
+	src: url('../fonts/web/Ubuntu-Light.woff') format('woff'),
+    url('../fonts/web/Ubuntu-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Bold';
+	src: url('../fonts/web/Ubuntu-Bold.woff') format('woff'),
+    url('../fonts/web/Ubuntu-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url('../fonts/web/Ubuntu-Regular.woff') format('woff'),
+    url('../fonts/web/Ubuntu-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+*/
