@@ -167,8 +167,6 @@ section {
 }
 
 .site-navigation li:last-child {   /* .user-navigation */
-    /*width: 140px;
-    height: 36px;*/
     padding: 8px 14px;
     border-radius: 18px;
     background-color: #fff;
@@ -197,7 +195,6 @@ section {
 
 .main-screen-flex {
     display: flex;
-    
 }
 
 .start-processing {
@@ -235,7 +232,7 @@ a.start-btn:hover {
 }
 
 .figure {
-    margin-right: -25px;
+    margin-right: -35px;
     margin-top: 70px;
     margin-bottom: 70px;
     margin-left: -95px;
@@ -256,5 +253,30 @@ a.start-btn:hover {
 
 /*---------- Footer ----------*/
 footer {
-	
+	background-color: #242637;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.main-footer span {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #7b7fa8;
+    font-weight: 300;
+}
+
+.main-footer span>a {
+    color: #7b7fa8;
+}
+
+.main-footer a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #22d6e7;
+    font-weight: 300;
 }
