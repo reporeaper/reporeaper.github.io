@@ -27,20 +27,19 @@
 
 /*---------- Основная разметка ----------*/
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Ubuntu', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
-	background-color: #fff;
-	max-width: 100vmax;
-	margin: 0 auto;
+    background-color: #fff;
 }
 
 h1 {
-	font-weight: 300;
+    font-weight: 300;
+    margin: 0;
 }
 
 .visually-hidden {
@@ -55,10 +54,13 @@ a {
     text-decoration: none;
 }
 
-.container,
 header {
-    margin: 0 200px;
-    padding-top: 60px;
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 980px; /* 1100 */
+    margin: 0 auto;
 }
 
 /*---------- Шапка и Первый блок ----------*/
@@ -76,18 +78,19 @@ header {
 
 .header-left {
     display: flex;
+    align-items: center;
 }
 
 .theWall {
     width: 1px;
     height: 51px;
     background-color: #49657d;
-    margin: 0 30px;
+    margin: 0 25px;
 }
 
 .header-left p {
     font-size: 14px;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     line-height: 18px;
     color: #fff;
     font-weight: 400;
@@ -101,7 +104,8 @@ header {
 }
 
 .header-right {
-    
+    display: flex;
+    align-items: flex-end;
 }
 
 .main-navigation,
@@ -127,10 +131,12 @@ header {
 
 .site-navigation {
     display: flex;
+    align-items: flex-end;
 }
 
 .site-navigation li {
-    margin-right: 40px;
+    margin-left: 16px;
+    padding: 8px 14px;
 }
 
 .site-navigation li a {
@@ -140,6 +146,7 @@ header {
     color: #ffffff;
     font-weight: 400;
     text-transform: uppercase;
+    text-align: right;
 }
 
 .site-navigation li a:hover {
@@ -152,15 +159,17 @@ header {
     text-decoration: underline;
 }
 
-.user-navigation li {
-    width: 140px;
-    height: 36px;
+.site-navigation li:last-child {   /* .user-navigation */
+    /*width: 140px;
+    height: 36px;*/
+    padding: 8px 14px;
     border-radius: 18px;
     background-color: #fff;
     text-align: center;
+    cursor: pointer;
 }
 
-.user-navigation li a {
+.site-navigation li a.login-link {     /* .user-navigation */
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 18px;
@@ -170,21 +179,63 @@ header {
     text-transform: uppercase;
 }
 
-.user-navigation li:hover {
+.site-navigation li:last-child:hover {         /* user-navigation */
     background-color: #ededed;
     transition: all .2s linear;
 }
 
-.user-navigation li a:focus {
+.site-navigation li a.login-link:focus {       /* user-navigation */
     text-decoration: underline;
 }
 
-.start-processing {
+.main-screen-flex {
+    display: flex;
+    
+}
 
+.start-processing {
+    align-self: center;
 }
 
 .start-processing h1 {
-    
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: #ffffff;
+    font-weight: 300;
+
+    padding-right: 180px;
+    margin-bottom: 70px;
+}
+
+a.start-btn {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+
+    border-radius: 28px;
+    background-color: #0facbb;
+
+    padding: 18px 30px;
+}
+
+a.start-btn:hover {
+    background-color: #0d9aa8;
+    transition: all .2s linear;
+}
+
+.figure {
+    margin-right: -25px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: -95px;
+}
+
+.figure img {
+    max-width: 100%;
 }
 
 /*---------- Второй блок ----------*/
