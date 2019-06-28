@@ -31,11 +31,11 @@ html {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
 	background-color: #fff;
-	max-width: 100%;
+	max-width: 100vmax;
 	margin: 0 auto;
 }
 
@@ -51,29 +51,31 @@ h1 {
 	margin: -1px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container,
 header {
-	margin: 0 200px;
+    margin: 0 200px;
+    padding-top: 60px;
 }
 
 /*---------- Шапка и Первый блок ----------*/
 .wrapper {
-    background-image: linear-gradient(67deg, rgba(40, 43, 68, .97) 0%, rgba(61, 67, 127, .97) 100%), url('../images/bg_photo.jpg'); /* #282b44fa 0%, #3d427ffa 100% */
-    background-repeat: no-repeat; /* background-blend-mode: overlay; цвет поверх фонового изображения */
+    background-image: linear-gradient(67deg, rgba(40, 43, 68, .97) 0%, rgba(61, 67, 127, .97) 100%), url('../images/bg_photo.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
 .main-header {
-    padding-top: 60px;
     display: flex;
+    justify-content: space-between;
+    /*align-items: flex-end;*/
 }
 
 .header-left {
     display: flex;
-}
-
-.main-header-logo {
-
 }
 
 .theWall {
@@ -89,6 +91,7 @@ header {
     line-height: 18px;
     color: #fff;
     font-weight: 400;
+    margin: 0;
 }
 
 .header-left p span {
@@ -98,38 +101,89 @@ header {
 }
 
 .header-right {
+    
+}
 
+.main-navigation,
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation,
+.user-navigation {
+    padding: 0;
+    margin: 0;
 }
 
 .main-navigation {
+    display: flex;
+    align-items: flex-end;
+}
 
+.user-navigation {
+    
 }
 
 .site-navigation {
-
+    display: flex;
 }
 
 .site-navigation li {
-    
+    margin-right: 40px;
 }
 
 .site-navigation li a {
-    
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .site-navigation li a:hover {
-    
+    color: #60e5d7;
+    transition: all .2s linear;
 }
 
 .site-navigation li a:focus {
-    
+    color: #60e5d7;
+    text-decoration: underline;
 }
 
-.btn {
+.user-navigation li {
+    width: 140px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.user-navigation li a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #393e6b;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.user-navigation li:hover {
+    background-color: #ededed;
+    transition: all .2s linear;
+}
+
+.user-navigation li a:focus {
+    text-decoration: underline;
+}
+
+.start-processing {
 
 }
 
-.reg-btn {
+.start-processing h1 {
     
 }
 
@@ -146,31 +200,3 @@ header {
 footer {
 	
 }
-
-
-
-/*
-@font-face {
-    font-family: 'Ubuntu Light';
-	src: url('../fonts/web/Ubuntu-Light.woff') format('woff'),
-    url('../fonts/web/Ubuntu-Light.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Ubuntu Bold';
-	src: url('../fonts/web/Ubuntu-Bold.woff') format('woff'),
-    url('../fonts/web/Ubuntu-Bold.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Ubuntu Regular';
-    src: url('../fonts/web/Ubuntu-Regular.woff') format('woff'),
-    url('../fonts/web/Ubuntu-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: normal;
-}
-*/
