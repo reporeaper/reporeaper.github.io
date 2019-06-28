@@ -56,10 +56,17 @@ a {
 
 header {
     padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .container {
-    max-width: 980px; /* 1100 */
+    max-width: 1020px; /* 1100 */
     margin: 0 auto;
 }
 
