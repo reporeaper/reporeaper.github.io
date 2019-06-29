@@ -42,6 +42,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -60,7 +64,8 @@ header {
     margin-right: 20px;
 }
 
-section {
+.main-screen,
+.specification {
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -158,7 +163,7 @@ section {
 
 .site-navigation li a:hover {
     color: #60e5d7;
-    transition: all .2s linear;
+    transition: all .2s ease;
 }
 
 .site-navigation li a:focus {
@@ -297,7 +302,29 @@ a.start-btn:hover {
 }
 
 /*---------- Третий блок ----------*/
+.our-clients {
+    background-color: #f5f5fa;
+}
 
+.our-clients h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: #b3b5c8;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 80px 200px;
+}
+
+.carousel {
+    padding-bottom: 80px;
+}
+
+.slider-arrows {
+    
+}
 
 /*---------- Четвертый блок ----------*/
 
