@@ -243,7 +243,58 @@ a.start-btn:hover {
 }
 
 /*---------- Второй блок ----------*/
+.specification h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    color: #393e6b;
+    font-weight: 300;
+    text-align: center;
 
+    padding: 80px 220px;
+}
+
+.specification ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: my-counter; /* Задаём имя счетчика */
+    margin-bottom: 80px;
+}
+
+.specification li::before {
+    content: counter(my-counter); /* Выводим число */
+    counter-increment: my-counter; /* Увеличиваем значение счётчика */
+}
+
+.spec-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.spec-description li {
+    font-size: 48px;
+    letter-spacing: 1px;
+    color: #cdeae9;
+    font-weight: 700;
+
+    width: 22%;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+
+.spec-description li p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #393e6b;
+    font-weight: 400;
+
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 20px;
+}
 
 /*---------- Третий блок ----------*/
 
