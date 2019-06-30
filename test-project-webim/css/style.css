@@ -319,7 +319,8 @@ a.start-btn:hover {
 
 /*---------- Четвертый блок ----------*/
 .registration {
-    background-color: #22a4a9;
+    /*background-color: #22a4a9;*/
+    background-image: linear-gradient(78deg, #0f8c8e 0%, #13c3d4 100%);
 }
 
 .registration h1 {
