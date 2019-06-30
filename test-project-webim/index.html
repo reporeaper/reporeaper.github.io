@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="slick/slick.css">
         <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+        <!--
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        -->
         <title>Webim Test Case</title>
 
         <!--[if lt IE 9]>
@@ -44,11 +46,6 @@
                                     <li><a class="scrollto" href="#price">стоимость</a></li>
                                     <li><a class="login-link" href="https://login.webim.ru/webim/register.php">регистрация</a></li>
                                 </ul>
-                                <!--
-                                <ul class="user-navigation">
-                                    
-                                </ul>
-                                -->
                             </nav>
                         <!--</div>-->
                     </div>
@@ -61,7 +58,6 @@
                             <h1>Принимайте обращения 
                                 клиентов из разных каналов
                                 в одном сервисе</h1>
-                                <!--<input type="button" class="start-btn" value="Начать обрабатывать заявки с Webim">-->
                                 <a class="start-btn" href="https://webim.ru/">Начать обрабатывать заявки с Webim</a>
                         </div>
                         <div class="figure">
@@ -93,9 +89,11 @@
                         <li><p>Шаблоны ответов 
                             и проверка орфографии</p></li>
                         <li><p>Отправка эмодзи 
-                            и оценка качества диалога</p></li>
+                            и оценка качества диалога</p>
+                        </li>
                         <li><p>Наблюдение за печатью 
-                            сообщения посетителем</p></li>
+                            сообщения посетителем</p>
+                        </li>
                     </ol>
                 </div>
             </section>
@@ -153,15 +151,17 @@
                                 <input type="text" name="Name" class="site-form" placeholder="Сайт">
                             </div>
                         </fieldset>
-                        <label>
+                        <div class="agreement">
                             <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off">
-                            <span class="fa fa-square" aria-hidden="true"></span>
-                            <span class="fa fa-check-square" aria-hidden="true"></span>
-                        </label>
-                        <span>Регистрируясь в системе, я принимаю условия 
-                        <a href="#">Лицензионного cоглашения</a>, <a href="#">Политики конфиденциальности</a> 
-                        и даю Согласие <a href="#">на обработку персональных данных</a>.</span>
-                        <input type="submit" name="submit" class="submit-btn" disabled="" value="Зарегистрироваться">
+                            <label for="politics"></label>
+                            <p>
+                                Регистрируясь в системе, я принимаю условия <a href="#">Лицензионного cоглашения</a>, <a href="#">Политики конфиденциальности</a> 
+                                и даю Согласие <a href="#">на обработку персональных данных</a>.
+                            </p>
+                        </div>
+                        <div class="pressForReg">
+                            <input type="submit" name="submit" class="submit-btn" disabled="" value="Зарегистрироваться">
+                        </div>
                     </form>
                     <!-- код делает не активной кнопку отправить, пока не стоит галочка -->
                     <script>

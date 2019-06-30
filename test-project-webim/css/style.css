@@ -38,7 +38,6 @@ body {
 }
 
 h1 {
-    font-weight: 300;
     margin: 0;
 }
 
@@ -137,10 +136,6 @@ header {
     align-items: flex-end;
 }
 
-.user-navigation {
-    
-}
-
 .site-navigation {
     display: flex;
     align-items: flex-end;
@@ -171,7 +166,7 @@ header {
     text-decoration: underline;
 }
 
-.site-navigation li:last-child {   /* .user-navigation */
+.site-navigation li:last-child {
     padding: 8px 14px;
     border-radius: 18px;
     background-color: #fff;
@@ -179,7 +174,7 @@ header {
     cursor: pointer;
 }
 
-.site-navigation li a.login-link {     /* .user-navigation */
+.site-navigation li a.login-link {
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 18px;
@@ -189,12 +184,12 @@ header {
     text-transform: uppercase;
 }
 
-.site-navigation li:last-child:hover {         /* user-navigation */
+.site-navigation li:last-child:hover {
     background-color: #ededed;
     transition: all .2s linear;
 }
 
-.site-navigation li a.login-link:focus {       /* user-navigation */
+.site-navigation li a.login-link:focus {
     text-decoration: underline;
 }
 
@@ -322,10 +317,6 @@ a.start-btn:hover {
     padding-bottom: 80px;
 }
 
-.slider-arrows {
-    
-}
-
 /*---------- Четвертый блок ----------*/
 .registration {
     background-color: #22a4a9;
@@ -343,12 +334,24 @@ a.start-btn:hover {
     padding: 60px 0 40px;
 }
 
-.registration span {
+.agreement {
+    display: flex;
+    align-items: baseline;
 
+    margin-bottom: 20px;
+    padding: 0 55px;
 }
 
-.registration span a {
+.agreement p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: 400;
+}
 
+.agreement p a {
+    color: #2acbd8;
 }
 
 .registration form {
@@ -361,6 +364,8 @@ a.start-btn:hover {
     padding: 0;
     border: none;
     width: 550px;
+
+    margin-bottom: 20px;
 }
 
 .flex-form {
@@ -408,25 +413,60 @@ input[type="text"].site-form {
     width: 510px;
 }
 
-#politics {
-    /*display: none;*/
+.registration input[type="checkbox"] {
+    display: none;
 }
 
-input[type="checkbox"] {
+label {
     width: 20px;
     height: 20px;
-    font-size: 10px;
-    line-height: 36px;
-    color: #047d89;
-    font-family: "Font Awesome";
-    text-align: center;
 
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #fff;
+
+    margin-right: 10px;
+}
+
+label::before {
+    content: "";
+    display: inline-block;
+    font-family: 'FontAwesome';
+    position: relative;
+    width: 20px;
+    color: #047d89;
+    text-align: center;
+}
+
+#politics:checked + label::before {
+    content: "\f00c";
 }
 
 input[type="submit"] {
+    width: 235px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #393e6b;
 
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333860;
+    transition: all .2s linear;
+}
+
+.pressForReg {
+    padding-bottom: 60px;
+    text-align: center;
 }
 
 /*---------- Footer ----------*/
