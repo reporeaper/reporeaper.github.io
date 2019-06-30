@@ -134,11 +134,25 @@
                 <div class="container">
                     <h1>Регистрация</h1>
                     <form action="https://echo.htmlacademy.ru" method="POST">
-                        <input type="text" required name="Name" placeholder="Имя">
-                        <input type="tel" required name="Phone" placeholder="Телефон">
-                        <input type="email" required name="Email" placeholder="Email">
-                        <input type="password" required name="password" placeholder="Пароль">
-                        <input type="text" name="Name" placeholder="Сайт">
+                        <fieldset>
+                            <div class="flex-form">
+                                <div class="form-element">
+                                    <input type="text" required name="Name" placeholder="Имя">
+                                </div>
+                                <div class="form-element">
+                                    <input type="tel" required name="Phone" placeholder="Телефон">
+                                </div>
+                                <div class="form-element">
+                                    <input type="email" required name="Email" placeholder="Email">
+                                </div>
+                                <div class="form-element">
+                                    <input type="password" required name="password" placeholder="Пароль">
+                                </div>
+                            </div>
+                            <div class="form-element">
+                                <input type="text" name="Name" class="site-form" placeholder="Сайт">
+                            </div>
+                        </fieldset>
                         <label>
                             <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off">
                             <span class="fa fa-square" aria-hidden="true"></span>
