@@ -4,24 +4,24 @@ $('.carousel').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 992,
         settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true
+            slidesToScroll: 1
           }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
             slidesToShow: 2,
             slidesToScroll: 2
           }
       },
       {
-        breakpoint: 480,
+        breakpoint: 320,
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1

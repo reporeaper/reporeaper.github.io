@@ -84,9 +84,6 @@ header {
 .main-header {
     display: flex;
     justify-content: center;
-    /*max-width: 1020px;
-    margin: 0 auto;
-    align-items: flex-end;*/
 }
 
 .main-header.fixed {
@@ -432,7 +429,7 @@ input[type="text"].site-form {
     display: none;
 }
 
-label {
+.agreement label {
     width: 20px;
     height: 20px;
 
@@ -442,7 +439,7 @@ label {
     margin-right: 10px;
 }
 
-label::before {
+.agreement label::before {
     content: "";
     display: inline-block;
     font-family: 'FontAwesome';
@@ -452,7 +449,7 @@ label::before {
     text-align: center;
 }
 
-#politics:checked + label::before {
+#politics:checked + .agreement label::before {
     content: "\f00c";
 }
 
@@ -518,6 +515,12 @@ footer {
 
 }
 
+@media screen and (max-width:1024px) {
+    .figure {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width:992px) {
     .main-header.fixed {
         padding: 20px 0 30px;
@@ -556,5 +559,79 @@ footer {
 }
 
 @media screen and (max-width:320px) {
-    
+    header {
+        padding-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main-header-logo,
+    .header-left p {
+        margin-left: 20px;
+    }
+
+    .main-header {
+        flex-direction: column;
+    }
+
+    .header-left {
+        display: block;
+    }
+
+    .theWall {
+        width: 320px;
+        height: 1px;
+        background-color: #49657d;
+        margin: 25px 0;
+    }
+
+    .header-right {
+        display: block;
+    }
+
+    .site-navigation {
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .main-screen-flex {
+        flex-direction: column-reverse;
+    }
+
+    .figure {
+        margin: 0;
+    }
+
+    .start-processing h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        line-height: 36px;
+        text-align: center;
+
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    a.start-btn {
+        
+    }
+
+    .specification h1 {
+        font-size: 24px;
+        padding: 40px 20px;
+    }
+
+    .specification ol {
+        margin-bottom: 40px;
+    }
+
+    .spec-description {
+        flex-direction: column;
+    }
+
+    .spec-description li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
