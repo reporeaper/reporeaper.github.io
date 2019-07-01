@@ -96,7 +96,7 @@ header {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-    background-color: #242637ad;
+    background-color: rgba(0, 0, 0, .7);
     z-index: 100;
     transition: all .6s linear; 
 }
@@ -512,4 +512,49 @@ footer {
     letter-spacing: 1px;
     color: #22d6e7;
     font-weight: 300;
+}
+
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:992px) {
+    .main-header.fixed {
+        padding: 20px 0 30px;
+        transition: none;
+    }
+
+    .start-processing h1,
+    .specification h1 {
+        font-size: 30px;
+    }
+
+    .figure {
+        margin-right: 0;
+    }
+
+    .specification ol {
+        margin-bottom: 60px;
+    }
+
+    .our-clients h2 {
+        font-size: 24px;
+        padding: 60px 200px;
+    }
+
+    .carousel {
+        padding-bottom: 60px;
+    }
+
+    .registration h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:320px) {
+    
 }
