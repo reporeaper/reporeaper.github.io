@@ -83,8 +83,22 @@ header {
 
 .main-header {
     display: flex;
-    justify-content: space-between;
-    /*align-items: flex-end;*/
+    justify-content: center;
+    /*max-width: 1020px;
+    margin: 0 auto;
+    align-items: flex-end;*/
+}
+
+.main-header.fixed {
+    position: fixed;
+    top: 0;
+    padding: 20px 20px 30px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    background-color: #242637ad;
+    z-index: 100;
+    transition: all .6s linear; 
 }
 
 .header-left {
