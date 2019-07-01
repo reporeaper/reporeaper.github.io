@@ -429,7 +429,7 @@ input[type="text"].site-form {
     display: none;
 }
 
-.agreement label {
+label {
     width: 20px;
     height: 20px;
 
@@ -439,7 +439,7 @@ input[type="text"].site-form {
     margin-right: 10px;
 }
 
-.agreement label::before {
+label::before {
     content: "";
     display: inline-block;
     font-family: 'FontAwesome';
@@ -449,7 +449,7 @@ input[type="text"].site-form {
     text-align: center;
 }
 
-#politics:checked + .agreement label::before {
+#politics:checked + label::before {
     content: "\f00c";
 }
 
