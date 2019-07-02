@@ -596,7 +596,7 @@ footer {
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:320px) and (max-width:425px) {
     header {
         padding-top: 20px;
         margin-left: 0;
