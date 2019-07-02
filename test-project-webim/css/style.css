@@ -555,7 +555,45 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+    .main-header {
+        display: block;
+    }
+
+    .header-left {
+        justify-content: center;
+    }
+
+    .header-right {
+        justify-content: space-around;
+    }
+
+    .start-processing h1 {
+        font-size: 26px;
+        padding-right: 100px;
+        margin-bottom: 40px;
+    }
     
+    a.start-btn {
+        font-size: 14px;
+    }
+
+    .specification h1 {
+        font-size: 26px;
+        padding: 40px 100px;
+    }
+
+    .specification ol {
+        margin-bottom: 40px;
+    }
+
+    .spec-description li {
+        width: 25%;
+        margin-bottom: 30px;
+    }
+
+    .our-clients h2 {
+        padding: 40px 100px;
+    }
 }
 
 @media screen and (max-width:320px) {
