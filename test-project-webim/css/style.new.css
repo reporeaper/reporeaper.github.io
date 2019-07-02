@@ -1,4 +1,4 @@
-/*---------- Подключаем шрифты ----------*/
+﻿/*---------- Подключаем шрифты ----------*/
 /*---------- font-family: 'Ubuntu', sans-serif; ----------*/
 
 @font-face {
@@ -713,6 +713,7 @@ footer {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .header-left {
@@ -752,21 +753,39 @@ footer {
     }
 
     .start-processing h1 {
-        font-size: 22px;
+        font-size: 20px;
         letter-spacing: 1px;
         line-height: 36px;
         text-align: center;
 
         padding-right: 0;
         margin-bottom: 40px;
+        margin-top: 20px;
+    }
+
+    .cta {
+        border-radius: 30px;
+        background-color: #0facbb;
+        text-align: center;
+        padding: 14px 30px;
+        margin-bottom: 30px;
     }
 
     a.start-btn {
-        
+        font-size: 16px;
+        line-height: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .our-clients h2 {
+        padding: 40px 20px;
+        line-height: unset;
     }
 
     .specification h1 {
         font-size: 24px;
+        line-height: unset;
         padding: 40px 20px;
     }
 
@@ -784,5 +803,14 @@ footer {
     .spec-description li {
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    .registration form,
+    .registration fieldset {
+        width: inherit; 
+    }
+
+    input[type="text"].site-form {
+        width: 232px;
     }
 }
