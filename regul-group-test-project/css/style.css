@@ -1,0 +1,111 @@
+﻿/*---------- Подключаем шрифты ----------*/
+/*---------- font-family: '', sans-serif; ----------*/
+
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/web/Roboto.woff') format('woff'),
+    url('../fonts/web/Roboto.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/web/Robotobold.woff') format('woff'),
+    url('../fonts/web/Robotobold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto';
+	src: url('../fonts/web/Robotomedium.woff') format('woff'),
+    url('../fonts/web/Robotomedium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Oswald';
+	src: url('../fonts/web/Oswaldmedium.woff') format('woff'),
+    url('../fonts/web/Oswaldmedium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*---------- Основная разметка ----------*/
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #fff;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    
+}
+
+.container {
+    
+}
+
+/*---------- Шапка и Первый блок ----------*/
+
+
+/*---------- Второй блок ----------*/
+
+
+/*---------- Третий блок ----------*/
+
+
+/*---------- Четвертый блок ----------*/
+
+
+/*---------- Footer ----------*/
+footer {
+
+}
+
+@media screen and (max-width:1200px) and (min-width:1025px) {
+
+}
+
+@media screen and (max-width:1024px) and (min-width:993px) {
+    
+}
+
+@media screen and (max-width:992px) and (min-width:769px) {
+    
+}
+
+@media screen and (max-width:768px) and (min-width:426px) {
+    
+}
+
+@media screen and (max-width:425px) and (min-width:320px) {
+    
+}
