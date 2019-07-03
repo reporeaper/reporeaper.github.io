@@ -618,7 +618,7 @@ footer {
     }
 
     .theWall {
-        width: 320px;
+        width: auto;
         height: 1px;
         background-color: #49657d;
         margin: 25px 0;
