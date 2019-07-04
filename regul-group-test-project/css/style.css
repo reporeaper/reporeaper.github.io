@@ -42,7 +42,7 @@ body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    background-color: #ededed;
+    background-color: #fff;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -68,45 +68,17 @@ a {
     text-decoration: none;
 }
 
-.big-flex-container {
-    display: flex;
-}
-
-.left-main-block {
-
-}
-
-.right-aside-block {
-
-}
-
-.container {
-    margin-left: 150px;
-}
-
 /*---------- Шапка и Первый блок ----------*/
-.left-main-block {
-    
-}
-
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ededed;
 
-    margin-left: 150px;
-    margin-bottom: 80px;
-}
-
-.main-header-logo {
-    margin-top: 20px;
+    padding: 20px 150px 80px;
 }
 
 .navigation {
-    
-}
-
-.main-navigation {
     margin-right: 120px;
 }
 
@@ -160,14 +132,48 @@ a {
         }
     /*----- Выпадающее меню -----*/
 
-.first-block h2 {
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header-element {
+    margin-right: 10px;
+}
+
+.right-header-element span {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.right-header-element--callback {
+    padding: 16px;
+    border-radius: 3px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.17);
+    background-color: #cd3a0d;
+}
+
+.right-header-element--callback:hover {
+    box-shadow: 0 0 25px rgba(205, 58, 12, 0.7);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.right-header-element--callback a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.left-block h2 {
     font-size: 25px;
     color: #1f2837;
     font-weight: 400;
     padding: 20px 0;
 }
 
-.first-block h1 {
+.left-block h1 {
     font-size: 50px;
     color: #191919;
     font-weight: 500;
@@ -179,25 +185,45 @@ a {
     margin: 0 auto;
     background-color: #fff;
 
-    z-index: 50;
+    /*position: fixed;
+    left: 20%;
+    z-index: 50;*/
 }
 
 .advantages ul {
     display: flex;
+    list-style: none;
 }
 
 /*---------- Шапка и блок Aside ----------*/
-.right-aside-block {
+.some-class {
     background-color: #fff;
 }
 
-.wrapper {
+.some-class-2 {
     box-shadow: -25px 0 68px rgba(0, 0, 0, 0.33);
     background-color: #004b9a;
 }
 
+.right-block-wrapper {
+    box-shadow: -25px 0 68px rgba(0, 0, 0, 0.33);
+    background-color: #004b9a;
+}
+
+.right-block .right-header {
+    padding: 20px 150px 80px;
+}
+
+.right-block .right-header .right-header-element {
+    margin-right: 25px;
+}
+
+.right-block .right-header .right-header-element--callback {
+    margin-left: 20px;
+}
+
 /*---------- Второй блок ----------*/
-.about {
+.some-class-3 {
     background-color: #004b9a;
 }
 
