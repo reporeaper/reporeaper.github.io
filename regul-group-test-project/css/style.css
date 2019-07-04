@@ -39,13 +39,16 @@ html {
 }
 
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: normal;
-    background-color: #fff;
+    background-color: #ededed;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 h1 {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
@@ -65,19 +68,138 @@ a {
     text-decoration: none;
 }
 
-header {
-    
+.big-flex-container {
+    display: flex;
+}
+
+.left-main-block {
+
+}
+
+.right-aside-block {
+
 }
 
 .container {
-    
+    margin-left: 150px;
 }
 
 /*---------- Шапка и Первый блок ----------*/
+.left-main-block {
+    
+}
 
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 150px;
+    margin-bottom: 80px;
+}
+
+.main-header-logo {
+    margin-top: 20px;
+}
+
+.navigation {
+    
+}
+
+.main-navigation {
+    margin-right: 120px;
+}
+
+.site-navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-navigation li {
+    margin-right: 30px;
+}
+
+.site-navigation li a {
+    font-size: 16px;
+    color: #191919;
+    font-weight: 500;
+}
+
+.site-navigation li a:hover,
+.site-navigation li a:focus {
+    border-bottom: 2px solid #254279;
+}
+    /*----- Выпадающее меню -----*/
+        ul.submenu {
+            display: none;
+            position: absolute;
+            width: 120px;
+            padding: 0;
+        }
+
+        ul.submenu > li {
+            display: block;
+        }
+
+        ul.submenu > li > a {
+            display: block;
+            padding: 2px 0;
+            color: #000;
+            text-decoration: none;
+        }
+
+        ul.submenu > li > a:hover {
+            border-bottom: none;
+            color: #254279;
+        }
+
+        ul.site-navigation > li:hover > ul.submenu {
+            display: block;
+        }
+    /*----- Выпадающее меню -----*/
+
+.first-block h2 {
+    font-size: 25px;
+    color: #1f2837;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.first-block h1 {
+    font-size: 50px;
+    color: #191919;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.advantages {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: #fff;
+
+    z-index: 50;
+}
+
+.advantages ul {
+    display: flex;
+}
+
+/*---------- Шапка и блок Aside ----------*/
+.right-aside-block {
+    background-color: #fff;
+}
+
+.wrapper {
+    box-shadow: -25px 0 68px rgba(0, 0, 0, 0.33);
+    background-color: #004b9a;
+}
 
 /*---------- Второй блок ----------*/
-
+.about {
+    background-color: #004b9a;
+}
 
 /*---------- Третий блок ----------*/
 
