@@ -155,7 +155,7 @@ a {
 }
 
 .right-header-element--callback:hover {
-    box-shadow: 0 0 25px rgba(205, 58, 12, 0.7);
+    box-shadow: 0 0 35px rgba(205, 58, 12, 0.85);
     transition: all .2s linear;
     cursor: pointer;
 }

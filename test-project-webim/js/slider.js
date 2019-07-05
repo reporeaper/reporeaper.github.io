@@ -21,7 +21,7 @@ $('.carousel').slick({
           }
       },
       {
-        breakpoint: 320,
+        breakpoint: 325,
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1
