@@ -78,6 +78,10 @@ header {
     display: none;
 }
 
+.header-right-label {
+    visibility: hidden;
+}
+
 /*---------- Шапка и Первый блок ----------*/
 .wrapper {
     background-image: linear-gradient(67deg, rgba(40, 43, 68, .97) 0%, rgba(61, 67, 127, .97) 100%), url('../images/bg_photo.jpg');
@@ -722,6 +726,7 @@ footer {
     }
 
     .header-right-label {
+        visibility: visible;
         display: block;
         position: absolute;
         top: 0;
@@ -731,6 +736,12 @@ footer {
         z-index: 20;
     }
 
+    .header-right-label img {
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    /*----- Для полосок меню на div'ах
     .burger-menu-line {
         position: absolute;
         top: 15px;
@@ -750,7 +761,7 @@ footer {
     .cuatro {
         top: 25px;
     }
-
+    -----*/
     .main-navigation {
         display: block;
         position: absolute;
@@ -799,125 +810,3 @@ footer {
         display: none;
     }
 }
-
-
-
-
-/*
-.menu-wrapper {
-        position: absolute;
-        right: 30px;
-        top: 30px;
-        max-height: 1000px;
-        max-width: 100%;
-    }
-*/    
-
-
-/*
-
-.menu-wrapper {
-    width: 180px;
-    height: 40px;
-    position: relative;
-    margin-top: 30px;
-    margin-right: 30px;
-}
-
-label {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.burger-menu-line {
-    position: absolute;
-    top: 8px;
-    right: 0;
-    width: 40px;
-    height: 3px;
-    background-color: #ffc61a;
-    transition: 0.5s all;
-}
-
-.dos,
-.tres {
-    top: 18px;
-}
-
-.cuatro {
-    top: 28px;
-}
-
-.main-navigation {
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    transform: translateY(100%);
-    max-height: 0;
-    font-size: 0;
-    overflow: hidden;
-    transition: 0.5s all;
-}
-
-.site-navigation {
-    display: block;
-}
-
-.site-navigation li,
-.site-navigation li:last-child {
-    margin-right: 0;
-}
-
-.site-navigation li a {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 5px;
-}
-
-.site-navigation li a:hover,
-.site-navigation li a.active:hover,
-.site-navigation li a:focus {
-    background-color: transparent;
-    border-radius: 0;
-    padding: 0;
-    color: #ffc61a;
-    transition: all 0.2s linear;
-}
-
-.site-navigation li a.active {
-    background-color:transparent;
-    border-radius: 0;
-    padding: 0;
-    color: #fff;
-}
-
-#check-menu:checked ~ .main-navigation {
-    max-height: 400px;
-}
-
-#check-menu:checked ~ .uno {
-    display: none;
-}
-
-#check-menu:checked ~ .dos {
-    transform: rotate(45deg);
-}
-
-#check-menu:checked ~ .tres {
-    transform: rotate(-45deg);
-}
-
-#check-menu:checked ~ .cuatro {
-    display: none;
-}
-
-*/
