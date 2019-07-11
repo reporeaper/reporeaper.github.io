@@ -334,6 +334,7 @@ a.start-btn:hover {
 
 .carousel {
     padding-bottom: 80px;
+    text-align: -webkit-center;
 }
 
 /*---------- Четвертый блок ----------*/
@@ -555,6 +556,7 @@ footer {
 
     .carousel {
         padding-bottom: 60px;
+        text-align: -webkit-center;
     }
 
     .registration h1 {
@@ -612,7 +614,7 @@ footer {
     }
 
     .main-header.fixed {
-        display: none;
+        /*display: none;*/
     }
 
     .main-header-logo,
@@ -634,7 +636,7 @@ footer {
         width: auto;
         height: 1px;
         background-color: #49657d;
-        margin: 25px 0;
+        margin: 20px 0;
     }
 
     .header-right {
@@ -780,7 +782,7 @@ footer {
     }
 
     .site-navigation li:last-child {
-        margin-bottom: 15px;
+        margin: 0 25px 15px;
     }
     
     .site-navigation li a {
