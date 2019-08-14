@@ -5,11 +5,11 @@ function showData() {
    
     function startTimer() {
       if (timerFIG > 0) {
-        block.innerHTML = 'Данные появятся через ' + timerFIG + ' секунд...';
+        block.innerHTML = 'Данные появятся через ' + timerFIG + ' секунд...'; //заменить на код pre-loader
         timerFIG--;
         setTimeout(startTimer, 1000);
       } else {
-        block.innerHTML = 'Данные к показу после всех действий';
+        block.innerHTML = 'innerPage.html'; //заменить на код нужной страницы
       }
     }
   }
