@@ -172,64 +172,101 @@ ul li {
 }
 
 /*---------- Второй блок ----------*/
-
-
-/*---------- Третий блок ----------*/
-
-
-/*---------- Четвертый блок ----------*/
-
-
-/*---------- Пятый блок ----------*/
-
-
-/*---------- Footer ----------*/
-footer {
-	
+.myWork {
+	padding-top: 110px;
 }
 
-/*---------- Адаптив ----------*/
-@media screen and (max-width:1200px) {
-	
+.myWork h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	text-align: center;
 }
 
-@media screen and (max-width:1024px) {
-	
+.myWork .underline {
+	background-color: #640d0d;
+
+	margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-@media screen and (max-width:992px) {
-	
+.myWork-navigation {
+	padding: 0;
+	margin: 0 auto;
+	max-width: 900px;
+
+	display: flex;
+	justify-content: space-evenly;
+
+	margin-bottom: 40px;
 }
 
-@media screen and (max-width:768px) {
-	
+.myWork-navigation li a {
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #0c0b33;
+
+	line-height: 1;
+	display: inline-block;
+	position: relative;
 }
 
-@media screen and (max-width:590px) {
-	
+.myWork-navigation li a::after {
+	display: block;
+    content: "";
+    height: 2px;
+	width: 0%;
+	left: 50%;
+	position: absolute;
+    background-color: #cc0033;
+	transition: width .3s ease-in-out;
+	transform: translateX(-50%);
 }
 
-@media screen and (max-width:440px) {
-	
+.myWork-navigation li a:hover {
+	color: #cc0033;
+	transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width:320px) {
-	
+.myWork-navigation li a:hover::after,
+.myWork-navigation li a:focus::after {
+	width: 100%;
 }
 
+.myWork-flexContainer img {
+	max-width: 100%;
+}
 
+.myWork-grid-elements-1,
+.myWork-grid-elements-2 {
+	padding: 0;
+	margin: 0;
 
+	display: flex;
+	justify-content: center;
+}
 
+.myWork-grid-elements-1 li {
+	margin: 0 10px 10px;
+}
 
+.myWork-grid-elements-2 li {
+	margin: 10px 10px 0;
+}
 
+.myWork-grid-elements-1 li:first-child,
+.myWork-grid-elements-2 li:first-child {
+	margin-left: 0;
+}
 
+.myWork-grid-elements-1 li:last-child,
+.myWork-grid-elements-2 li:last-child {
+	margin-right: 0;
+}
 
-
-
-
-
-
-/* Базовые стили слоя затемнения и модального окна
+/* Modal Windows */
+/* Базовые стили слоя затемнения и модального окна */
 .overlay {
 	top: 0;
 	right: 0;
@@ -240,6 +277,7 @@ footer {
 	opacity: 0;
 	position: fixed;
 	cursor: default;
+	z-index: 10;
 }
 
 .overlay:target {
@@ -259,6 +297,8 @@ footer {
 
     padding: 10px;
 	border: 1px solid #383838;
+
+	z-index: 20;
 }
 
 .overlay:target + .popup {
@@ -302,4 +342,48 @@ footer {
 	border: none;
 	width: 100%;
 	height: 100%;
+}
+/* /V\odal Windows */
+
+/*---------- Третий блок ----------*/
+
+
+/*---------- Четвертый блок ----------*/
+
+
+/*---------- Пятый блок ----------*/
+
+
+/*---------- Footer ----------*/
+footer {
+	
+}
+
+/*---------- Адаптив ----------*/
+@media screen and (max-width:1200px) {
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+}
+
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:768px) {
+	
+}
+
+@media screen and (max-width:590px) {
+	
+}
+
+@media screen and (max-width:440px) {
+	
+}
+
+@media screen and (max-width:320px) {
+	
 }
