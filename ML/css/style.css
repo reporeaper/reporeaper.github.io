@@ -59,6 +59,10 @@ a {
     text-decoration: none;
 }
 
+ul li {
+	list-style: none;
+}
+
 .visually-hidden {
 	position: absolute;
 	clip: rect(0 0 0 0);
@@ -77,6 +81,94 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #383838;
+
+	padding-top: 40px;
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-wrapper {
+	width: 334px;
+}
+
+.site-navigation {
+	padding: 0;
+	margin: 0;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.site-navigation li a {
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-transform: uppercase;
+
+	line-height: 1;
+	display: inline-block;
+	position: relative;
+}
+
+.site-navigation li a::after {
+	display: block;
+    content: "";
+    height: 2px;
+	width: 0%;
+	left: 50%;
+	position: absolute;
+    background-color: #fff;
+	transition: width .3s ease-in-out;
+	transform: translateX(-50%);
+}
+
+.site-navigation li a:hover::after,
+.site-navigation li a:focus::after {
+	width: 100%;
+}
+
+.nav-phone-number {
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.main-screen {
+	text-align: center;
+}
+
+.main-screen h1 {
+	font-size: 70px;
+	letter-spacing: 7px;
+	color: #fff;
+
+	margin-top:300px;
+	margin-bottom: 20px;
+}
+
+.underline {
+	width: 80px;
+	height: 1px;
+	background-color: #fff;
+
+	margin: 0 auto;
+}
+
+.main-screen p {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #fff;
+
+	margin-bottom: 286px;
+}
+
+.scroll-down {
+	padding-bottom: 66px;
 }
 
 /*---------- Второй блок ----------*/
