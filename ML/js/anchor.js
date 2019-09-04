@@ -9,8 +9,8 @@
     });
   });
 
-  //Кнопка "Наверх"
-  $(function() {
+//Кнопка "Наверх"
+$(function() {
     $(window).scroll(function() {
         if($(this).scrollTop() != 0) {
             $('#toTop').fadeIn();
