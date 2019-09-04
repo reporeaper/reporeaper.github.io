@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    $("a[href]").on("click", function (e) {
+    $("a.scrollto").on("click", function (e) {//a[href]
       var anchor = $(this);
       $('html, body').stop().animate({
         scrollTop: $(anchor.attr('href')).offset().top
