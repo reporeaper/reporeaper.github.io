@@ -80,34 +80,51 @@
 
             <section id="aboutMe" class="about-me">
                 <div class="container">
-                <h2 class="visually-hidden">Обо мне</h2>
-                <h2>Обо мне</h2>
-                <article>
-                    <img src="img/author.jpg" alt="Фото дизайнера">
-                    <p>Меня зовут Любовь Машилова.</p>
-                    <p>
-                        Занимаюсь дизайном с 2018 года. Постоянно слежу 
-                        за трендами в отраслях сайтостроения и иллюстраций. 
-                        Также занимаюсь ретушью.
-                    </p>    
-                    <p>   
-                        Занимаюсь созданием одностраничных сайтов, 
-                        интернет - магазинов, демо - страниц, иллюстраций, 
-                        а также созданием баннеров.
-                    </p>
-                </article>
-                <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1_VN6t2gTif91YHtvuJqSc_JETNR99203" download="" title="Мое резюме">Скачать резюме</a>
+                    <h2 class="visually-hidden">Обо мне</h2>
+                    <h2>Обо мне</h2>
+                    <div class="underline"></div>
+                    <article class="info-block">
+                        <div class="my-photo">
+                            <img src="img/author.jpg" alt="Фото дизайнера">
+                        </div>
+                        <div class="my-info">
+                            <p>Меня зовут Любовь Машилова.</p>
+                            <p>
+                                Занимаюсь дизайном с 2018 года. Постоянно слежу 
+                                за трендами в отраслях сайтостроения и иллюстраций. 
+                                Также занимаюсь ретушью.
+                            </p>    
+                            <p>   
+                                Занимаюсь созданием одностраничных сайтов, 
+                                интернет - магазинов, демо - страниц, иллюстраций, 
+                                а также созданием баннеров.
+                            </p>
+                            <div class="download-link">
+                                <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1_VN6t2gTif91YHtvuJqSc_JETNR99203" download="" title="Мое резюме">Скачать резюме</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </section>
 
             <section id="myContacts" class="feedback">
                 <div class="container">
                 <h2 class="visually-hidden">Обратная связь</h2>
                 <h2>Обратная связь</h2>
+                <div class="underline"></div>
                     <form action="https://echo.htmlacademy.ru" method="POST">
                         <fieldset>
-                            <input type="text" name="Name" placeholder="Имя">
-                            <input type="tel" name="Phone" placeholder="Телефон">
-                            <input type="email" name="Email" placeholder="E-mail">
+                            <div class="flex-form">
+                                <div class="form-element">
+                                    <input type="text" required name="Name" placeholder="Имя">
+                                </div>
+                                <div class="form-element">
+                                    <input type="tel" required name="Phone" placeholder="Телефон">
+                                </div>
+                                <div class="form-element">
+                                    <input type="email" required name="Email" placeholder="E-mail">
+                                </div>
+                            </div>
                             <div class="text-area"> <!-- Обертка для формы ввода пользовательского текста -->
                                 <textarea cols="" rows="" placeholder="Сообщение"></textarea>
                             </div>
