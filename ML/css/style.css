@@ -389,12 +389,12 @@ ul li {
 	justify-content: space-evenly;
 }
 
-.my-photo,
-.my-info {
-	width: 45%;
+.my-photo {
+	margin-left: 110px;
 }
 
 .my-info {
+	width: 40%;
 	padding-top: 20px;
 }
 
@@ -403,6 +403,9 @@ ul li {
 }
 
 /*---------- Четвертый блок ----------*/
+.feedback {
+	margin-bottom: 180px;
+}
 .feedback fieldset {
 	width: 528px;
 	height: 320px;
@@ -472,6 +475,41 @@ input[type="submit"]:hover {
 /*---------- Footer ----------*/
 footer {
 	background-color: #0c0b33;
+}
+
+.main-footer {
+	padding: 60px 0;
+}
+
+.main-footer-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0;
+	margin: 0;
+}
+
+.main-footer-list p {
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.social {
+	display: flex;
+	justify-content: space-evenly;
+
+	padding: 0;
+	margin: 0;
+}
+
+.social li {
+	padding-left: 14px;
+}
+
+.social li:first-child {
+	padding-left: 7px;
 }
 
 /*---------- Адаптив ----------*/
