@@ -538,6 +538,25 @@ footer {
 	padding-left: 7px;
 }
 
+/* -------------- */
+.section-title {
+	position: relative;
+}
+
+.bckgrnd-title {
+	position: absolute;
+	z-index: -20;
+
+	top: -90px;
+	padding-left: 360px;
+
+	font-size: 300px;
+	letter-spacing: 45px;
+	color: rgba(175, 174, 195, 0.05);
+	font-family: "Proxima Nova Bold";
+	font-weight: normal;
+}
+
 /*---------- Адаптив ----------*/
 @media screen and (max-width:1200px) {
 	
