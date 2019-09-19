@@ -1,0 +1,95 @@
+﻿/*---------- Подключаем шрифты ----------*/
+/*---------- font-family: 'PT Sans Caption', sans-serif; ----------*/
+@font-face {
+    font-family: 'PT Sans Caption';
+	src: url('../fonts/web/ptsanscaption.woff') format('woff'),
+    url('../fonts/web/ptsanscaption.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'PT Sans Caption';
+	src: url('../fonts/web/ptsanscaptionbold.woff') format('woff'),
+    url('../fonts/web/ptsanscaptionbold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/*---------- Основная разметка ----------*/
+html {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Sans Caption', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	background-color: #fff;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+h1, h2 {
+	
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+/*---------- Шапка и Первый блок ----------*/
+
+
+/*---------- Второй блок ----------*/
+
+
+/*---------- Третий блок ----------*/
+
+
+/*---------- Четвертый блок ----------*/
+
+
+/*---------- Footer ----------*/
+
+
+/*---------- Адаптив ----------*/
+@media screen and (max-width:1200px) {
+	
+}
+
+@media screen and (max-width:1024px) {
+	
+}
+
+@media screen and (max-width:992px) {
+	
+}
+
+@media screen and (max-width:768px) {
+	
+}
+
+@media screen and (max-width:590px) {
+	
+}
+
+@media screen and (max-width:440px) {
+	
+}
+
+@media screen and (max-width:320px) {
+	
+}
