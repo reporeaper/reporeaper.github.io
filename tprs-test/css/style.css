@@ -51,23 +51,102 @@ ul li {
 }
 
 /*---------- Шапка и Первый блок ----------*/
+.main-header {
+	background-color: #fff;
+	/*padding-top: 10px;*/
+}
+
 .main-header-menu {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 
 	margin: 0;
 	padding: 0;
+
+	position: relative;
+}
+
+.main-header ul {
+	display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header ul::after {
+	display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+.main-header ul.main-menu > li {
+    float: left;
+    position: relative;
+}
+
+.main-header ul.main-menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+.main-header ul.main-menu > li > a:hover {
+    background-color: black;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid red;
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+a.enter {
+	background-color: rgba(7,119,186,0);
+	border: 2px solid #0777ba;
+
+	font-size: 15px;
+	color: #6c98c1;
+	
+	padding: 5px 20px;
 }
 
 .wrapper {
 	position: relative;
 	overflow: hidden;
+
+	width: 1280px;
+    height: 360px;
 }
 
 .blur {
 	position: absolute;
-    width: 1280px;
-    height: 360px;
     left: 0;
     top: 0;
     bottom: 0;

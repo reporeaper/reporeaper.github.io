@@ -16,12 +16,24 @@
         
     </head>
     <body>
-        <div class="wrapper">
-            <div class="blur"></div>
-            <header class="main-header">
-                <ul class="main-header-menu">
-                    <li><a href="#">Войти</a></li>
-                    <li><img src="img/thissitetitle.svg" width="300px" height="45px"></li>
+        <header class="main-header">
+            <!--
+            <ul class="main-header-menu">
+                <li><a class="enter" href="#">Войти</a></li>
+                <li><img src="img/thissitetitle.svg" width="300px" height="45px"></li>
+                <li><a href="#">Помощь</a>
+                    <ul class="submenu">
+                        <li><a href="#">Как это работает</a></li>
+                        <li><a href="#">Вопрос-ответ</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                    </ul>
+                </li>
+            </ul>
+            -->
+            <div class="main-header-menu">
+                <div><a class="enter" href="#">Войти</a></div>
+                <div><img src="img/thissitetitle.svg" width="300px" height="45px"></div>
+                <ul class="main-menu">
                     <li><a href="#">Помощь</a>
                         <ul class="submenu">
                             <li><a href="#">Как это работает</a></li>
@@ -30,8 +42,11 @@
                         </ul>
                     </li>
                 </ul>
-            </header>
-
+            </div>
+        </header>
+        
+        <div class="wrapper">
+            <div class="blur"></div>
             <div class="search-form">
                 <h1>Поиск начислений</h1>
                 <label>
