@@ -1,0 +1,124 @@
+﻿/*---------- Подключаем шрифты ----------*/
+@font-face {
+    font-family: 'Fira Sans';
+	src: url('../fonts/web/Firasanslight.woff') format('woff'),
+    url('../fonts/web/Firasanslight.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+	src: url('../fonts/web/Firasansbold.woff') format('woff'),
+    url('../fonts/web/Firasansbold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/web/Firasansregular.woff') format('woff'),
+    url('../fonts/web/Firasansregular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/web/Firasansmedium.woff') format('woff'),
+    url('../fonts/web/Firasansmedium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/web/Firasanssemibold.woff') format('woff'),
+    url('../fonts/web/Firasanssemibold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+/*---------- Основная разметка ----------*/
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: #f4f4f4;
+}
+
+.home {
+    position: relative;
+    width: 1360px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*----------  ----------*/
+.logo {
+    position: absolute;
+    width: 303px;
+    height: 69px;
+    left: 123px;
+    top: 58px;
+
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+
+    letter-spacing: -1px;
+
+    color: #000;
+}
+/*---------- Второй блок ----------*/
+
+/*---------- Третий блок ----------*/
+
+/*---------- Четвертый блок ----------*/
+
+/*---------- Footer ----------*/
+
+
+@media screen and (max-width:1200px) {
+
+}
+
+@media screen and (max-width:1024px) {
+    
+}
+
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:590px) {
+    
+}
+
+@media screen and (min-width:320px) and (max-width:440px) {
+    
+}
