@@ -30,13 +30,21 @@ $(function () {
         focusOnSelect: true
     })
 
-    $('.holder__slider').slick({
+    $('.holder__slider, .shop__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
         prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
         nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>'
     })
+
+    // $('.shop__slider').slick({
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1,
+    //   fade: true,
+    //   prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
+    //   nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>'
+    // })
 
     $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus-btn.svg" alt=""></img></div><div class="quantity-button quantity-down"><img src="img/minus-btn.svg" alt=""></img></div></div>').insertAfter('.quantity input');
     $('.quantity').each(function() {
@@ -76,6 +84,9 @@ $(function () {
         $('.summ').html('$' + summ)
     })
 
+    $('.surfboard-box__circle').on('click', function(){
+      $(this).toggleClass('active')
+    })
     
 
 
