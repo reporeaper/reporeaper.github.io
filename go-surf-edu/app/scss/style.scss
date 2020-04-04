@@ -121,7 +121,30 @@
     }
   }
 }
-
+.menu-btn{
+  // width: 60px;
+  // height: 60px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // position: absolute;
+  // left: 20px;
+  // bottom: -130px;
+  // z-index: 10;
+  // // border-radius: 50%;
+  // background-color: rgba(0,0,0,0.2);
+  // &__inner{
+  //   width: 40px;
+  // }
+  // &__line{
+  //   height: 5px;
+  //   background-color: rgba(#fff, .5);
+  //   + .menu-btn__line{
+  //     margin-top: 5px;
+  //   }
+  // }
+  display: none;
+}
 .header__date {
   font-weight: 800;
   font-size: 72px;
@@ -711,3 +734,4 @@
 //   bottom: 68px;
 //   left: 52px;
 // }
+@import "media";

@@ -11,7 +11,15 @@ $(function () {
     $('.slider-dots').slick({
         slidesToShow: 4,
         slidesToScroll: 4,
-        asNavFor: '.header__slider'
+        asNavFor: '.header__slider',
+        responsive: [{
+          breakpoint: 780,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false
+          }
+        }]
     })
 
     $('.surf-slider').slick({
@@ -86,6 +94,10 @@ $(function () {
 
     $('.surfboard-box__circle').on('click', function(){
       $(this).toggleClass('active')
+    })
+
+    $('.menu-btn').on('click', function(){
+      $('.menu').toggleClass('visible')
     })
     
 
