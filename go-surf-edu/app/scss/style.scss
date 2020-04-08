@@ -305,6 +305,7 @@
   margin: 0 auto;
   .slick-list {
     min-height: 635px;
+    overflow: visible;
   }
   .slick-current {
     .slider-map-dots__content {
