@@ -37,7 +37,35 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
     nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>',
-    asNavFor: '.slider-map'
+    asNavFor: '.slider-map',
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false
+        }
+      }
+    ]
   })
 
   $(".slider-map").slick({
@@ -45,7 +73,37 @@ $(function () {
     slidesToScroll: 1,
     arrows: false,
     asNavFor: '.surf-slider',
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 430,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      }
+    ]
   })
 
   $('.holder__slider, .shop__slider').slick({
@@ -56,13 +114,7 @@ $(function () {
     nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>'
   })
 
-  // $('.shop__slider').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   fade: true,
-  //   prevArrow: '<img class="slider-arrows slider-arrows__left" src="img/arrows-left.svg" alt=""></img>',
-  //   nextArrow: '<img class="slider-arrows slider-arrows__right" src="img/arrows-right.svg" alt=""></img>'
-  // })
+
 
   $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="img/plus-btn.svg" alt=""></img></div><div class="quantity-button quantity-down"><img src="img/minus-btn.svg" alt=""></img></div></div>').insertAfter('.quantity input');
   $('.quantity').each(function () {

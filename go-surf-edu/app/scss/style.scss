@@ -121,7 +121,7 @@
     }
   }
 }
-.menu-btn{
+.menu-btn {
   // width: 60px;
   // height: 60px;
   // display: flex;
@@ -248,9 +248,11 @@
   }
 }
 .surf-box {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &__wrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   &__inner {
     min-height: 750px;
     background: rgba(#1c2121, 0.85);
@@ -381,6 +383,7 @@
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     bottom: -21px;
+    // left:
     left: 50%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -474,6 +477,7 @@
     min-height: 320px;
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: contain;
     .descr__head {
       position: relative;
       padding-right: 78px;
