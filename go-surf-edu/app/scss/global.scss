@@ -14,6 +14,10 @@ body {
   background-color: #171919;
   color: #fff;
   text-transform: uppercase;
+  //чтобы не было горизонтального
+  //скролла при анимации
+  min-width: 320px;
+  overflow-x: hidden;
 }
 a {
   display: inline-block;
@@ -69,13 +73,16 @@ li {
   }
 }
 .title {
-  span {
+  div {
     font-size: 200px;
     color: rgba(#fff, 0.02);
     font-weight: 800;
     position: relative;
     display: inline-block;
     transform: translateX(-50px);
+  }
+  span {
+    display: inline-block;
   }
   h3 {
     position: absolute;
