@@ -1,0 +1,33 @@
+/*---------- font-family: 'Circe', sans-serif; ----------*/
+@font-face {
+    font-family: 'Circe';
+	src: url('../fonts/web/Circe-Light.woff') format('woff'),
+    url('../fonts/web/Circe-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Circe';
+	src: url('../fonts/web/Circe-Regular.woff') format('woff'),
+    url('../fonts/web/Circe-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/web/Circe-Bold.woff') format('woff'),
+    url('../fonts/web/Circe-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: bold;
+}
+
+/*---------- font-family: 'Proxima Nova Bold', sans-serif; ----------*/
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('../fonts/web/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/web/ProximaNova-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}

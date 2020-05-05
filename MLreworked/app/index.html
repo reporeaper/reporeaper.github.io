@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ML Design | Digital-designer & illustrator</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="icon" href="favicons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+  <!--[if lt IE 9]>
+	            <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__info">
+      <div class="header__logo">
+        <a href="#">
+          <img src="images/logo.svg" alt="">
+        </a>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a class="scrollto" href="#myWorks" onclick="slowScroll('#myWorks')"><span>Работы</span></a></li>
+          <li><a class="scrollto" href="#aboutMe" onclick="slowScroll('#aboutMe')"><span>Обо мне</span></a></li>
+          <li><a class="scrollto" href="#myContacts" onclick="slowScroll('#myContacts')"><span>Контакты</span></a></li>
+        </ul>
+      </nav>
+      <div class="header__contact">
+        <a class="header__phone" href="tel:+79217738477">+7 (921) 773-84-77</a>
+      </div>
+    </div>
+    <div class="header__title-info">
+      <div class="header__title-text">
+        Mashilova Lyubov
+      </div>
+      <div class="header__subtitle-text">
+        Digital-designer & illustrator
+      </div>
+    </div>
+    <div class="scroll__down">
+      <a href="#myWorks" onclick="slowScroll('#myWorks')" class="animated fadeInDown infinite slow">
+        <img src="images/scroll-down-1.png" width="50" height="50">
+      </a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section id="myWorks" class="works">
+      <div class="works__title">
+        <div>
+          <h3>Работы</h3>
+          <span>works</span>
+        </div>
+      </div>
+      <nav class="works__menu">
+        <ul class="works__menu-list">
+          <li class="button all" data-filter="all" tabindex="-1"><a href="#items">Все</a></li>
+          <li class="button mobile" data-filter="mobile" tabindex="-2"><a href="#items">Мобильные интерфейсы</a></li>
+          <li class="button site" data-filter="site" tabindex="-3"><a href="#items">Сайты</a></li>
+          <li class="button illustrate" data-filter="illustrate" tabindex="-4"><a href="#items">Иллюстрации</a></li>
+        </ul>
+      </nav>
+      <div class="works__items" id="items">
+        <div class="item elem illustrate">
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-1.jpg"><img title="Волк и луна" src="images/work-1.jpg" alt="Пример работы: Волк и луна"></a>
+        </div>
+        <div class="item elem site">
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-2.jpg"><img title="Интернет-магазин Undress Code" src="images/work-2.jpg"
+              alt="Пример работы: Интернет-магазин Undress Code"></a>
+        </div>
+        <div class="item elem illustrate">
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-3.jpg"><img title="Девочка на качелях" src="images/work-3.jpg"
+              alt="Пример работы: Девочка на качелях"></a>
+        </div>
+        <div class="item elem site">
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-4.jpg"><img title="Прототип ГЦСИ" src="images/work-4.jpg" alt="Пример работы: Прототип ГЦСИ"></a>
+        </div>
+        <div class="item elem site">
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-5.jpg"><img title="Фан-сайт по игре Dota 2" src="images/work-5.jpg"
+              alt="Пример работы: Фан-сайт по игре Dota 2"></a>
+        </div>
+        <div class="item elem site">
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-6.jpg"><img title="Прототип ГЦСИ ver.2" src="images/work-6.jpg"
+              alt="Пример работы: Прототип ГЦСИ ver.2"></a>
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
