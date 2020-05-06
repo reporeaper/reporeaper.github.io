@@ -28,8 +28,8 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li><a class="scrollto" href="#myWorks" onclick="slowScroll('#myWorks')"><span>Работы</span></a></li>
-          <li><a class="scrollto" href="#aboutMe" onclick="slowScroll('#aboutMe')"><span>Обо мне</span></a></li>
-          <li><a class="scrollto" href="#myContacts" onclick="slowScroll('#myContacts')"><span>Контакты</span></a></li>
+          <li><a class="scrollto" href="#about" onclick="slowScroll('#about')"><span>Обо мне</span></a></li>
+          <li><a class="scrollto" href="#contacts" onclick="slowScroll('#contacts')"><span>Контакты</span></a></li>
         </ul>
       </nav>
       <div class="header__contact">
@@ -62,38 +62,74 @@
       </div>
       <nav class="works__menu">
         <ul class="works__menu-list">
-          <li class="button all" data-filter="all" tabindex="-1"><a href="#items">Все</a></li>
-          <li class="button mobile" data-filter="mobile" tabindex="-2"><a href="#items">Мобильные интерфейсы</a></li>
-          <li class="button site" data-filter="site" tabindex="-3"><a href="#items">Сайты</a></li>
-          <li class="button illustrate" data-filter="illustrate" tabindex="-4"><a href="#items">Иллюстрации</a></li>
+          <li class="button all" data-filter="all" tabindex="-1"><a href="#myWorks">Все</a></li>
+          <li class="button mobile" data-filter="mobile" tabindex="-2"><a href="#myWorks">Мобильные интерфейсы</a></li>
+          <li class="button site" data-filter="site" tabindex="-3"><a href="#myWorks">Сайты</a></li>
+          <li class="button illustrate" data-filter="illustrate" tabindex="-4"><a href="#myWorks">Иллюстрации</a></li>
         </ul>
       </nav>
       <div class="works__items" id="items">
         <div class="item elem illustrate">
-          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-1.jpg"><img title="Волк и луна" src="images/work-1.jpg" alt="Пример работы: Волк и луна"></a>
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-1.jpg"><img
+              title="Волк и луна" src="images/work-1.jpg" alt="Пример работы: Волк и луна"></a>
         </div>
         <div class="item elem site">
-          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-2.jpg"><img title="Интернет-магазин Undress Code" src="images/work-2.jpg"
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-2.jpg"><img
+              title="Интернет-магазин Undress Code" src="images/work-2.jpg"
               alt="Пример работы: Интернет-магазин Undress Code"></a>
         </div>
         <div class="item elem illustrate">
-          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-3.jpg"><img title="Девочка на качелях" src="images/work-3.jpg"
-              alt="Пример работы: Девочка на качелях"></a>
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-3.jpg"><img
+              title="Девочка на качелях" src="images/work-3.jpg" alt="Пример работы: Девочка на качелях"></a>
         </div>
         <div class="item elem site">
-          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-4.jpg"><img title="Прототип ГЦСИ" src="images/work-4.jpg" alt="Пример работы: Прототип ГЦСИ"></a>
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-4.jpg"><img
+              title="Прототип ГЦСИ" src="images/work-4.jpg" alt="Пример работы: Прототип ГЦСИ"></a>
         </div>
         <div class="item elem site">
-          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-5.jpg"><img title="Фан-сайт по игре Dota 2" src="images/work-5.jpg"
-              alt="Пример работы: Фан-сайт по игре Dota 2"></a>
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-5.jpg"><img
+              title="Фан-сайт по игре Dota 2" src="images/work-5.jpg" alt="Пример работы: Фан-сайт по игре Dota 2"></a>
         </div>
         <div class="item elem site">
-          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-6.jpg"><img title="Прототип ГЦСИ ver.2" src="images/work-6.jpg"
-              alt="Пример работы: Прототип ГЦСИ ver.2"></a>
+          <a data-fancybox="gallery" data-width="500" data-height="500" href="images/work-6.jpg"><img
+              title="Прототип ГЦСИ ver.2" src="images/work-6.jpg" alt="Пример работы: Прототип ГЦСИ ver.2"></a>
         </div>
       </div>
     </section>
-    
+
+    <section id="about" class="about">
+      <div class="about__title">
+        <div>
+          <h3>Обо мне</h3>
+          <span>about</span>
+        </div>
+      </div>
+      <div class="about__info">
+        <div class="about__info-img">
+          <img src="images/author.jpg" alt="">
+        </div>
+        <div class="about__info-content">
+          <div class="about__info-content__text">
+            <p>Меня зовут Любовь Машилова.</p>
+            <p>
+              Занимаюсь дизайном с 2018 года. Постоянно слежу
+              за трендами в отраслях сайтостроения и иллюстраций.
+              Также занимаюсь ретушью.
+            </p>
+            <p>
+              Занимаюсь созданием одностраничных сайтов,
+              интернет - магазинов, демо - страниц, иллюстраций,
+              а также созданием баннеров.
+            </p>
+          </div>
+          <div class="about__info-content__button">
+            <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1_VN6t2gTif91YHtvuJqSc_JETNR99203"
+              download="" title="Мое резюме">Скачать резюме</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </div>
 
