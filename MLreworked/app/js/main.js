@@ -14,6 +14,19 @@ $(function () {
     })
   })
 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() != 0) {
+      $('#toTop').fadeIn()
+    } else {
+      $('#toTop').fadeOut()
+    }
+  })
+  $('#toTop').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 777)
+  })
+
+  new WOW().init()
+
 })
 
 function slowScroll(id) {
