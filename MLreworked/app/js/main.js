@@ -33,12 +33,12 @@ $(function () {
   new WOW().init()
 
   $('.list-mobile').slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     dots: false,
     infinite: false,
-    centerMode: true,
+    // centerMode: true,
     variableWidth: true
   })
 
