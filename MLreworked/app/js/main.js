@@ -21,11 +21,46 @@ $(function () {
       $('#toTop').fadeOut()
     }
   })
+
   $('#toTop').click(function () {
     $('body,html').animate({ scrollTop: 0 }, 777)
   })
 
+  $('#check__menu').on('click', function () {
+    $('.header__menu').toggleClass('visible')
+  })
+
   new WOW().init()
+
+  $('.list-mobile').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    infinite: false,
+    centerMode: true,
+    variableWidth: true
+  })
+
+  $('.works__items-mobile').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    infinite: false,
+    asNavFor: '.dots__slider-mobile'
+  })
+
+  $('.dots__slider-mobile').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    infinite: false,
+    asNavFor: '.works__items-mobile',
+    // centerMode: true,
+    focusOnSelect: true
+  })
 
 })
 
@@ -36,3 +71,23 @@ function slowScroll(id) {
   }, 1000)
   return false
 }
+
+
+
+// $('.works__menu-mobile').slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   dots: false,
+  //   infinite: false,
+  //   centerMode: true
+  // })
+
+  // $('.works__items-mobile').slick({
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   arrows: false,
+  //   dots: false,
+  //   infinite: false,
+  //   centerMode: true
+  // })

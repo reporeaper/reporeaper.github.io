@@ -9,8 +9,6 @@
   background-image: url(../images/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  // background-position: center;
-  position: relative;
   color: $white;
   &__info {
     display: flex;
@@ -76,6 +74,12 @@
   &__phone {
     letter-spacing: 1px;
   }
+  &__phone-img {
+    display: none;
+  }
+}
+.mobile__contacts-social {
+  visibility: hidden;
 }
 .scroll__down {
   position: absolute;
@@ -85,6 +89,12 @@
   right: 0;
   margin: 0 auto;
   max-width: 0;
+}
+.menu-btn {
+  display: none;
+}
+#check__menu {
+  display: none;
 }
 .works,
 .about,
@@ -127,6 +137,9 @@
       }
     }
   }
+  &__menu-mobile {
+    display: none;
+  }
   &__menu {
     max-width: 700px;
     margin: 0 auto;
@@ -166,6 +179,9 @@
         }
       }
     }
+  }
+  &__items-mobile {
+    display: none;
   }
   &__items {
     div {
