@@ -1,4 +1,4 @@
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1440px) {
   .header {
     &__title-info {
       margin-top: 200px;
@@ -11,6 +11,7 @@
       div {
         span {
           font-size: 200px;
+          left: 70px;
         }
       }
     }
@@ -33,7 +34,9 @@
 }
 
 @media screen and (max-width: 995px) {
-  .works {
+  .works,
+  .about,
+  .contacts {
     &__title {
       div {
         span {
@@ -44,11 +47,26 @@
       }
     }
   }
+  .about {
+    &__title {
+      div {
+        span {
+          top: -75px !important;
+          left: -50 !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
   .header__info {
     padding: 50px 50px 0;
+  }
+  .about {
+    &__info {
+      max-width: 850px;
+    }
   }
 }
 
@@ -86,6 +104,18 @@
     }
     .slick-current .dots__slider-item {
       background-color: $text;
+    }
+  }
+  .about {
+    &__info {
+      display: block;
+      &-img {
+        margin: 0 auto;
+      }
+      &-content {
+        max-width: 400px;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -234,6 +264,17 @@
       }
     }
   }
+  .about {
+    &__title {
+      div {
+        span {
+          font-size: 70px;
+          top: -35px !important;
+          left: 0 !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -301,6 +342,31 @@
   .scroll__down {
     right: 50px;
     padding-bottom: 50px;
+  }
+  .works {
+    img {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+  .about {
+    margin-top: 80px !important;
+    &__info {
+      padding-top: 0;
+      &-img {
+        display: none;
+      }
+      &-content {
+        max-width: 295px;
+      }
+      &-content__text {
+        padding-bottom: 0;
+        line-height: 24px;
+      }
+      &-content__button {
+        text-align: center;
+      }
+    }
   }
 }
 
