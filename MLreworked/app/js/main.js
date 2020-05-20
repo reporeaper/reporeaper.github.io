@@ -71,23 +71,3 @@ function slowScroll(id) {
   }, 1000)
   return false
 }
-
-
-
-// $('.works__menu-mobile').slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   dots: false,
-  //   infinite: false,
-  //   centerMode: true
-  // })
-
-  // $('.works__items-mobile').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   dots: false,
-  //   infinite: false,
-  //   centerMode: true
-  // })

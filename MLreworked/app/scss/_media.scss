@@ -18,10 +18,29 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .contacts {
+    &__title {
+      div {
+        span {
+          left: 0 !important;
+          transform: translateX(-75px) !important;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+  .footer {
+    &__info {
+      padding: 0 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 1169px) {
   .works {
     &__items {
-      margin: 0 15px;
+      max-width: 900px;
     }
     &__title {
       div {
@@ -46,6 +65,9 @@
         }
       }
     }
+    &__items {
+      padding: 0 10px;
+    }
   }
   .about {
     &__title {
@@ -53,6 +75,16 @@
         span {
           top: -75px !important;
           left: -50 !important;
+        }
+      }
+    }
+  }
+  .contacts {
+    &__title {
+      div {
+        span {
+          letter-spacing: 0px;
+          top: -67px !important;
         }
       }
     }
@@ -66,12 +98,20 @@
   .about {
     &__info {
       max-width: 850px;
+      padding: 30px 10px 0;
+      &-content {
+        max-width: 360px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 799px) {
   .works {
+    img {
+      width: 100%;
+      padding: 20px;
+    }
     &__menu {
       display: none;
     }
@@ -90,7 +130,7 @@
     &__items-mobile {
       display: block;
       text-align: center;
-      padding-bottom: 10px;
+      // padding-bottom: 10px;
     }
   }
   .dots__slider-mobile {
@@ -203,6 +243,17 @@
       display: block;
     }
   }
+  .contacts {
+    &__title {
+      div {
+        span {
+          letter-spacing: -10px;
+          top: -67px !important;
+          transform: translateX(-200px) !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -275,6 +326,70 @@
       }
     }
   }
+  .contacts {
+    margin-top: 100px !important;
+    &__title {
+      div {
+        span {
+          font-size: 70px;
+          top: -20px !important;
+          letter-spacing: normal;
+          transform: translateX(-110px) !important;
+        }
+      }
+    }
+    fieldset {
+      width: 274px;
+      height: 380px;
+    }
+  }
+  .wrapper {
+    display: block;
+    input[type="email"] {
+      width: 228px;
+    }
+    textarea {
+      width: 228px;
+    }
+    input[type="submit"] {
+      padding: 14px 50px;
+    }
+    &__text-area {
+      width: 228px;
+      margin: 20px auto;
+    }
+    &__btn {
+      text-align: center;
+    }
+  }
+  .footer {
+    margin-top: 80px;
+    &__info {
+      width: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap-reverse;
+      margin: 0 auto;
+      p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: $white;
+        padding-left: 10px;
+      }
+      &-block {
+        &__geo {
+          display: none;
+        }
+        &__copy {
+          display: flex;
+        }
+      }
+      &-logo {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -343,12 +458,12 @@
     right: 50px;
     padding-bottom: 50px;
   }
-  .works {
-    img {
-      width: 100%;
-      padding: 0 10px;
-    }
-  }
+  // .works {
+  //   img {
+  //     width: 100%;
+  //     padding: 10px;
+  //   }
+  // }
   .about {
     margin-top: 80px !important;
     &__info {
@@ -368,136 +483,15 @@
       }
     }
   }
+  .footer {
+    .icons__copy {
+      padding: 0 20px;
+    }
+  }
 }
 
-// @media screen and (max-width: 400px) {
-//   .header {
-//     &__info {
-//       padding: 0;
-//       padding-top: 30px;
-//     }
-//     &__logo {
-//       display: none;
-//     }
-//     &__title-text {
-//       font-size: 30px;
-//       letter-spacing: 5px;
-//     }
-//     &__subtitle-text {
-//       font-size: 14px;
-//       letter-spacing: 1px;
-//       line-height: 40px;
-//     }
-//     .menu-btn {
-//       left: 5px;
-//     }
-//   }
-// }
-
-// @media screen and (max-width: 320px) {
-//   .header {
-//     &__menu {
-//       transform: translateY(-150%);
-//       transition: all linear 0.2s;
-//       &-list {
-//         min-width: 180px;
-//         font-size: 12px;
-//         line-height: 22px;
-//         letter-spacing: 4px;
-//       }
-//     }
-//     &__logo {
-//       display: block;
-//     }
-//   }
-//   .mobile__contacts-social {
-//     visibility: visible;
-//     margin-top: 180px;
-//     ul {
-//       display: flex;
-//       justify-content: center;
-//       li + li {
-//         padding-left: 14px;
-//       }
-//     }
-//   }
-//   .scroll__down {
-//     right: 50px;
-//     padding-bottom: 20px;
-//   }
-// }
-
-//original 470 media
-// @media screen and (max-width: 470px) {
-//   .header {
-//     &__title-text {
-//       line-height: 50px;
-//     }
-//     &__menu {
-//       transform: translateY(-160%);
-//       transition: all linear 0.3s;
-//       &.visible {
-//         transform: translateY(0);
-//         background-color: rgba(#000, 0.2);
-//       }
-//       &-list {
-//         display: block;
-//         text-align: center;
-//         min-width: 240px;
-//       }
-//     }
-//   }
-
-//   .header {
-//     &__info {
-//       padding: 0;
-//       padding-top: 30px;
-//     }
-//     &__logo {
-//       display: none;
-//     }
-//     &__title-text {
-//       font-size: 30px;
-//       letter-spacing: 5px;
-//     }
-//     &__subtitle-text {
-//       font-size: 14px;
-//       letter-spacing: 1px;
-//       line-height: 40px;
-//     }
-//     .menu-btn {
-//       left: 5px;
-//     }
-//   }
-
-//   .header {
-//     &__menu {
-//       transform: translateY(-150%);
-//       transition: all linear 0.2s;
-//       &-list {
-//         min-width: 180px;
-//         font-size: 12px;
-//         line-height: 22px;
-//         letter-spacing: 4px;
-//       }
-//     }
-//     &__logo {
-//       display: block;
-//     }
-//   }
-//   .mobile__contacts-social {
-//     visibility: visible;
-//     margin-top: 150px;
-//     ul {
-//       display: flex;
-//       justify-content: center;
-//       li + li {
-//         padding-left: 14px;
-//       }
-//     }
-//   }
-//   .scroll__down {
-//     right: 50px;
-//     padding-bottom: 50px;
-//   }
-// }
+@media screen and (max-height: 599px) {
+  .header__title-info {
+    margin-top: 70px;
+  }
+}

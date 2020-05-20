@@ -365,8 +365,13 @@
       }
     }
   }
-  .header__phone {
+  .footer__phone {
+    letter-spacing: 1px;
     margin: 16px 0;
+  }
+  .icons__copy {
+    color: $white;
+    text-align: center;
   }
 }
 .up__arrow {
