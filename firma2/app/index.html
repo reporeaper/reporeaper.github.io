@@ -22,7 +22,7 @@
 
     <header class="header__main">
       <div class="btn">
-        <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Войти</a>
+        <a class="header__btn" data-fancybox data-src="#modal" href="javascript:;" href="#">Войти</a>
       </div>
       <div class="header__logo">
         <a href="#"><img src="img/thissitetitle.svg" width="300px" height="45px"></a>
@@ -30,7 +30,8 @@
       <nav>
         <ul class="help__menu">
           <li><a href="#">Помощь</a></li>
-          <ul class="help__menu-dropdown">
+          <div class="rect visually-hidden"></div>
+          <ul class="help__menu-dropdown visually-hidden">
             <li><a href="#">Как это работает</a></li>
             <li><a href="#">Вопрос-ответ</a></li>
             <li><a href="#">Служба поддержки</a></li>
@@ -302,15 +303,30 @@
     </div>
   </footer>
 
-  <!--
-  <div id="modal">
-    <form>
-      <input type="text" placeholder="Ваше имя">
-      <input type="text" placeholder="Ваш телефон">
-      <input type="submit" value="Отправить">
-    </form>
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <div class="modal__title">
+        Введите логин и пароль для входа
+        в Личный кабинет
+      </div>
+      <form>
+        <input type="text" placeholder="Логин">
+        <input type="text" placeholder="Пароль">
+        <input type="submit" value="Войти">
+      </form>
+      <div class="modal__links">
+        <div class="modal__links-elem">
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <div class="modal__links-elem">
+          <a href="#">Регистрация</a>
+        </div>
+      </div>
+      <div class="modal__close-btn">
+        <a href="#" class="modal__btn close-modal" data-modal="#modal"></a>
+      </div>
+    </div>
   </div>
--->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
