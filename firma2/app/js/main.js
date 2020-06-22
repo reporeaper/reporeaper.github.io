@@ -11,7 +11,7 @@ $(function () {
 
   $('.help__menu').on('click', function () {
     $('.help__menu-dropdown').toggleClass('visually-hidden'),
-    $('.rect').toggleClass('visually-hidden')
+      $('.rect').toggleClass('visually-hidden')
   })
 
 })

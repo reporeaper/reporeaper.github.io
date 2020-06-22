@@ -17,11 +17,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // header fixed
+    position: sticky;
+    top: 0;
+    background-color: rgba(#fff, 0.9);
+    z-index: 100;
   }
   &__btn {
     border: 2px solid #0777ba;
     color: #6c98c1;
     padding: 5px 20px;
+  }
+  &__mobile {
+    display: none;
   }
 }
 .help__menu {
@@ -88,7 +96,7 @@
   right: 0;
   top: 110px;
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
   &-title {
     font-size: 36px;
     color: #fff;
@@ -116,6 +124,9 @@
       background: darken(#d30531, 7.5%);
     }
   }
+  input[type="image"] {
+    display: none;
+  }
   p {
     color: #fff;
   }
@@ -126,6 +137,9 @@
     font-size: 36px;
     text-align: center;
     padding-bottom: 20px;
+    &-mobile {
+      display: none;
+    }
   }
   &__list {
     width: 615px;
