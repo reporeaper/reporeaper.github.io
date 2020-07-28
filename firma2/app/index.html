@@ -44,24 +44,24 @@
         <a href="#"><img src="img/thissitetitle.svg" width="300px" height="45px"></a>
       </div>
       <nav>
-        <ul class="help__menu">
+        <div class="help__menu">
           <input type="checkbox" id="check__menu">
           <label for="check__menu"></label>
-          <li>
-            <a class="help__menu-btn" href="#">
-              <div class="help__menu-btn__line line-1"></div>
-              <div class="help__menu-btn__line line-2"></div>
-              <div class="help__menu-btn__line line-3"></div>
-              <div class="help__menu-btn__line line-4"></div>
-            </a>
-          </li>
+          <div class="help__menu-btn">
+            <div class="help__menu-btn__line line-1"></div>
+            <div class="help__menu-btn__line line-2"></div>
+            <div class="help__menu-btn__line line-3"></div>
+            <div class="help__menu-btn__line line-4"></div>
+          </div>
           <ul class="help__menu-dropdown visually-hidden">
             <li><a href="#">Как это работает</a></li>
             <li><a href="#">Вопрос-ответ</a></li>
             <li><a href="#">Служба поддержки</a></li>
-            <li id="login"><a class="header__btn" data-fancybox data-src="#modal" href="javascript:;" href="#">Войти</a></li>
+            <li id="login"><a class="header__btn" data-fancybox data-src="#modal" href="javascript:;" href="#">Войти</a>
+            </li>
           </ul>
-        </ul>
+        </div>
+      </nav>
     </header>
 
     <section class="main__screen">
@@ -132,7 +132,7 @@
             </p>
           </div>
         </section>
-        <!--
+       
         <section class="debts">
           <div class="debts__content">
             <div class="debts__content-text">
@@ -200,7 +200,7 @@
             </div>
           </div>
         </section>
-
+<!--
         <section class="partners">
           <div class="partners__title">C нами работают</div>
           <div class="partners__slider">
