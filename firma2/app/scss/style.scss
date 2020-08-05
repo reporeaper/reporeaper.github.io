@@ -267,7 +267,10 @@
   }
 }
 .partners {
-  padding: 80px 0 60px;
+  padding: 80px 10px 60px;
+  &__mobile {
+    display: none;
+  }
   &__title {
     font-size: 24px;
     text-align: center;
@@ -282,10 +285,16 @@
       }
     }
   }
+  img {
+    opacity: 0.25;
+  }
 }
 .footer {
   padding: 40px 20px;
   background-color: #e6ecf1;
+  &__mobile {
+    display: none;
+  }
   &__elements {
     display: flex;
     justify-content: space-between;
